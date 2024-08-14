@@ -1,3 +1,16 @@
-.header-link {
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     padding: 10px;
+}
+
+.home-link {
+    color: white;
+    cursor: pointer !important;
+}
+
+.home-link:visited {
+    color: white;
 }

@@ -1,0 +1,90 @@
+:root {
+    --dark-grey: #1B1D1F;
+    --black: #111315;
+    --grey: #6F757C;
+    --mint: #BEE3CC;
+    --cream: #FEF7EE;
+    --yellow: #F6C768;
+    --orange: #ED735D;
+}
+
+.simple__coffee-container {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+    background-color: var(--black);
+    height: 100vh;
+    overflow: auto;
+}
+
+.main__wrapper {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 70px;
+
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    gap: 50px;
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    gap: 16px;
+}
+
+.info__header {
+    color: var(--cream);
+    font-size: 2rem;
+}
+
+.info__text {
+    color: var(--grey);
+}
+
+.info__button-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info__button {
+    color: var(--cream);
+    background-color: var(--dark-grey);
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.info__button.active {
+    background-color: var(--grey);
+}
+
+@media only screen and (max-width:640px) {
+    .main__wrapper {
+        padding: 30px;
+    }
+
+    .main__container {
+        padding: 20px;
+    }
+
+    .info__container {
+        width: 100%;
+    }
+}
