@@ -1,0 +1,13 @@
+:root {
+    --black: #040711;
+    --dark-grey-blue: #394150;
+    --grey-blue: #4D5562;
+    --light-grey: #CDD5E0;
+    --cream: #F9FAFB;
+    --blue: #3662E3;
+    --light-blue: #7CA9F3;
+    --grey: #212936cc;
+    --dark-grey: #121826cc;
+}
+
+@media only screen and (max-width:640px) {}
