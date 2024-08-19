@@ -3,6 +3,7 @@ import Product from "./Product";
 import "./Products.css";
 async function fetchProducts() {
   return new Promise((resolve, reject) => {
+    //Simulate load times
     setTimeout(async () => {
       try {
         const result = await fetch(

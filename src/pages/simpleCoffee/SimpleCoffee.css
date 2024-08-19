@@ -18,6 +18,13 @@
     overflow: auto;
 }
 
+.header_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .main__wrapper {
     position: absolute;
     top: 10%;

@@ -11,6 +11,12 @@ function Home() {
           <li>
             <Link to="./simpleCoffee">Simple Coffee Listing</Link>
             <span className="font-small">
+              - React, Creating and styling components, API and React Query
+            </span>
+          </li>
+          <li>
+            <Link to="./Translate">Translate</Link>
+            <span className="font-small">
               - React, Creating and styling components
             </span>
           </li>

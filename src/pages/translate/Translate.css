@@ -3,11 +3,42 @@
     --dark-grey-blue: #394150;
     --grey-blue: #4D5562;
     --light-grey: #CDD5E0;
-    --cream: #F9FAFB;
+    --off-white: #F9FAFB;
     --blue: #3662E3;
     --light-blue: #7CA9F3;
     --grey: #212936cc;
     --dark-grey: #121826cc;
 }
 
-@media only screen and (max-width:640px) {}
+.translate__container {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+    background-image: url("../../assets/translate/hero_img.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: var(--black);
+    height: 100vh;
+    overflow: auto;
+}
+
+.textArea__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.textArea__row {
+    display: flex;
+    gap: 20px;
+    width: 1000px;
+}
+
+@media only screen and (max-width:640px) {
+    .textArea__wrapper {
+        flex-direction: column;
+    }
+}
