@@ -8,37 +8,51 @@ function TextAreaTranslated({
   setTranslatedLanguage,
   handleCopy,
   displayModal,
+  isSpeaking,
+  handleTextToSpeech,
+  languages,
 }) {
+  function handleChange(event) {
+    const selectedName = event.target.value;
+    const selectedLanguage = languages.languages.find((language) => {
+      return language.name === selectedName;
+    });
+
+    if (selectedLanguage) {
+      setTranslatedLanguage({
+        name: selectedName,
+        code: selectedLanguage.code,
+      });
+    }
+  }
   return (
     <div className="textArea__container">
       <div className="textArea__button-top-row">
-        <button
-          className={`textArea__language-button ${
-            translatedLanguage === "English" ? "active" : ""
-          }`}
-          onClick={() => {
-            setTranslatedLanguage("English");
-          }}
+        <select
+          className={`textArea__language-button active`}
+          value={translatedLanguage.name}
+          onChange={handleChange}
         >
-          English
-        </button>
-        <button
-          className={`textArea__language-button ${
-            translatedLanguage === "French" ? "active" : ""
-          }`}
-          onClick={() => {
-            setTranslatedLanguage("French");
-          }}
-        >
-          French
-        </button>
+          {languages.languages.map((language) => {
+            return (
+              <option key={language.id} value={language.name}>
+                {language.name}
+              </option>
+            );
+          })}
+        </select>
       </div>
 
       <div className="textArea__input">{translatedText}</div>
 
       <div className="textArea__button-bottom-row">
         <div className="textArea__button-util-row">
-          <button className="textArea__button-util">
+          <button
+            onClick={(event) => handleTextToSpeech(event, "translate")}
+            className={`textArea__button-util ${
+              isSpeaking ? "button-active" : null
+            }`}
+          >
             <img
               src="../translate/sound_max_fill.svg"
               alt="Text to Speech"

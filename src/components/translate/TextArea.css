@@ -84,6 +84,10 @@
     cursor: pointer;
 }
 
+.textArea__button-util.button-active {
+    border: 2px solid var(--blue);
+}
+
 .textArea__button-util-modal {
     position: absolute;
     padding: 5px 10px 5px 10px;

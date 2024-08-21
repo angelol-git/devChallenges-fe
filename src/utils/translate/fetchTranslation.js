@@ -2,12 +2,12 @@ async function fetchTranslation(sourceText, sourceLanguage, translatedLanguage) 
     // if (sourceLanguage === "Automatic") {
     //     console.log("here");
 
+    //Simulate Load times
     return new Promise((resolve, reject) => {
-        //Simulate Load times
         setTimeout(async () => {
             try {
                 const result = await fetch(
-                    `https://api.mymemory.translated.net/get?q=${sourceText}&langpair=${formatLanguage(sourceLanguage)}|${formatLanguage(translatedLanguage)}`
+                    `https://api.mymemory.translated.net/get?q=${sourceText}&langpair=${sourceLanguage.code}|${translatedLanguage.code}`
                 );
 
                 if (!result.ok) {
@@ -20,20 +20,8 @@ async function fetchTranslation(sourceText, sourceLanguage, translatedLanguage) 
             catch (error) {
                 reject(error);
             }
-        }, 1000)
+        }, 500)
     });
 }
 
-function formatLanguage(language) {
-    let formattedLanguage;
-    switch (language) {
-        case "English":
-            formattedLanguage = "en";
-            break;
-        case "French":
-            formattedLanguage = "fr";
-            break;
-    }
-    return formattedLanguage;
-}
 export default fetchTranslation;

@@ -6,14 +6,22 @@ import TextAreaTranslated from "../../components/translate/TextAreaTranslated";
 import fetchTranslation from "../../utils/translate/fetchTranslation";
 import "./Translate.css";
 import "../../assets/styles/reset.css";
-
+import languages from "../../assets/translate/languages.json";
 function Translate() {
   const [sourceText, setSourceText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
-  const [sourceLanguage, setSourceLanguage] = useState("English");
-  const [translatedLanguage, setTranslatedLanguage] = useState("French");
+  const [sourceLanguage, setSourceLanguage] = useState({
+    name: languages.languages[0].name,
+    code: languages.languages[0].code,
+  });
+  const [translatedLanguage, setTranslatedLanguage] = useState({
+    name: languages.languages[1].name,
+    code: languages.languages[1].code,
+  });
   const [displaySourceModal, setDisplaySourceModal] = useState(false);
   const [displayTranslatedModal, setDisplayTranslatedModal] = useState(false);
+  const [isSourceSpeaking, setIsSourceSpeaking] = useState(false);
+  const [isTranslateSpeaking, setIsTranslateSpeaking] = useState(false);
   const results = useQuery({
     queryKey: ["translation"],
     queryFn: () =>
@@ -44,6 +52,34 @@ function Translate() {
     setTranslatedText(data.data.responseData.translatedText);
   }
 
+  function handleTextToSpeech(event, type) {
+    event.preventDefault();
+    if (isSourceSpeaking || isTranslateSpeaking) {
+      return;
+    }
+    let utterance = new SpeechSynthesisUtterance(
+      type === "source" ? sourceText : translatedText
+    );
+    speechSynthesis.speak(utterance);
+    if (type === "source") {
+      utterance.onstart = () => {
+        setIsSourceSpeaking(true);
+      };
+
+      utterance.onend = () => {
+        setIsSourceSpeaking(false);
+      };
+    } else if (type === "translate") {
+      utterance.onstart = () => {
+        setIsTranslateSpeaking(true);
+      };
+
+      utterance.onend = () => {
+        setIsTranslateSpeaking(false);
+      };
+    }
+  }
+
   return (
     <div className="translate__container">
       <Header />
@@ -58,6 +94,9 @@ function Translate() {
             handleCopy={handleCopy}
             displayModal={displaySourceModal}
             results={results}
+            isSpeaking={isSourceSpeaking}
+            handleTextToSpeech={handleTextToSpeech}
+            languages={languages}
           />
           <TextAreaTranslated
             translatedText={translatedText}
@@ -66,6 +105,9 @@ function Translate() {
             setTranslatedLanguage={setTranslatedLanguage}
             handleCopy={handleCopy}
             displayModal={displayTranslatedModal}
+            isSpeaking={isTranslateSpeaking}
+            handleTextToSpeech={handleTextToSpeech}
+            languages={languages}
           />
         </div>
       </div>
