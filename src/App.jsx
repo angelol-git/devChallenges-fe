@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./pages/Home";
 import SimpleCoffee from "./pages/simpleCoffee/simpleCoffee";
 import Translate from "./pages/translate/Translate";
+import GitHubProfile from "./pages/githubProfile/GitHubProfile";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/simpleCoffee" element={<SimpleCoffee />} />
           <Route path="/translate" element={<Translate />} />
+          <Route path="/githubProfile" element={<GitHubProfile />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

@@ -1,0 +1,33 @@
+.gh__search-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gh__search-form-row {
+    display: flex;
+    background-color: var(--dark-grey);
+    gap: 16px;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+
+.gh__username-input {
+    width: 400px;
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    outline: none;
+    border: none;
+}
+
+
+.gh__username-input::placeholder {
+    color: var(--grey);
+    opacity: 1;
+    /* Firefox */
+}
+
+.gh__username-input::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: var(--grey);
+}

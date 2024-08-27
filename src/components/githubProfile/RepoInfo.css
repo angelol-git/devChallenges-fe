@@ -1,0 +1,41 @@
+.gh__repo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.gh__repo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--light-grey);
+    width: 100%;
+    border-radius: 16px;
+    padding: 20px;
+    background: linear-gradient(to right, var(--black), var(--purple))
+}
+
+.gh__repo-name {
+    font-weight: 1.25rem;
+    font-weight: 400;
+}
+
+.gh__repo-description {
+    font-weight: 200;
+}
+
+.gh__repo-card-counter-row {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.gh__repo-card-counter {
+    display: flex;
+    gap: 5px;
+}
+
+.gh__repo-card-updated {
+    font-size: 0.75rem;
+}

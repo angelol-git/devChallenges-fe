@@ -17,7 +17,13 @@ function Home() {
           <li>
             <Link to="./Translate">Translate</Link>
             <span className="font-small">
-              - React, Creating and styling components
+              - React, Text to Speech, Clipboard and modal, React Forms
+            </span>
+          </li>
+          <li>
+            <Link to="./gitHubProfile">GitHub Profile</Link>
+            <span className="font-small">
+              - React, Text to Speech, Clipboard and modal, React Forms
             </span>
           </li>
         </ul>
