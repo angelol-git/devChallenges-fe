@@ -1,4 +1,4 @@
-:root {
+.gh__container {
     --black: #111729;
     --purple: #1D1B48;
     --blue: #3662E3;
@@ -6,6 +6,7 @@
     --medium-grey: #364153;
     --grey: #4A5567;
     --light-grey: #CDD5E0;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .grey-text {
@@ -14,10 +15,6 @@
 
 .light-grey-text {
     color: var(--light-grey);
-}
-
-.gh__container {
-    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .gh__header-container {

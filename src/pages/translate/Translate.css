@@ -1,4 +1,4 @@
-:root {
+.translate__container {
     --black: #040711;
     --dark-grey-blue: #394150;
     --grey-blue: #4D5562;
@@ -8,9 +8,6 @@
     --light-blue: #7CA9F3;
     --grey: #212936cc;
     --dark-grey: #121826cc;
-}
-
-.translate__container {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -22,6 +19,7 @@
     background-color: var(--black);
     height: 100vh;
     overflow: auto;
+
 }
 
 .textArea__wrapper {

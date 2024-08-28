@@ -1,4 +1,4 @@
-:root {
+.simple__coffee-container {
     --dark-grey: #1B1D1F;
     --black: #111315;
     --grey: #6F757C;
@@ -6,9 +6,6 @@
     --cream: #FEF7EE;
     --yellow: #F6C768;
     --orange: #ED735D;
-}
-
-.simple__coffee-container {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;

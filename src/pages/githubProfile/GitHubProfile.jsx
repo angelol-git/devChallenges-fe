@@ -53,7 +53,7 @@ function GitHubProfile() {
                 does not exist
               </p>
             ) : (
-              <p>Can not retrieve GitHub profile.</p>
+              <p>Can not GitHub profile.</p>
             )}
           </div>
         </main>

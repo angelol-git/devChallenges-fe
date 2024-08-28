@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
+  document.body.style = "background: #FAFAF9";
   return (
     <main className="main-container">
       <section className="home-container">
