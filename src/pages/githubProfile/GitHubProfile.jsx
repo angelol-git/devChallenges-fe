@@ -17,17 +17,21 @@ function GitHubProfile() {
   const results = useQueries({
     queries: [
       {
-        queryKey: ["username", 1],
+        queryKey: ["username", searchUser],
         queryFn: () => fetchGitHubProfile(searchUser),
       },
-      { queryKey: ["repos", 2], queryFn: () => fetchGitHubRepos(searchUser) },
+      {
+        queryKey: ["repos", searchUser],
+        queryFn: () => fetchGitHubRepos(searchUser),
+      },
     ],
   });
 
   function handleSubmit(event) {
     event.preventDefault();
-    setSearchUser(event.target.value);
-    results.refetch();
+    setSearchUser(event.target[0].value);
+    results[0].refetch();
+    results[1].refetch();
   }
 
   return (

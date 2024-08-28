@@ -4,7 +4,7 @@ async function fetchGitHubRepos(username) {
         setTimeout(async () => {
             try {
                 const result = await fetch(
-                    `https://api.github.com/orgs/${username}/repos`
+                    `https://api.github.com/users/${username}/repos`
                 );
 
                 if (!result.ok) {

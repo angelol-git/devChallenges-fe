@@ -3,3 +3,9 @@
     height: 120px;
     padding: 20px;
 }
+
+.gh__repo-all-link-skeleton {
+    border-radius: 16px;
+    height: 24px;
+    width: 158px;
+}

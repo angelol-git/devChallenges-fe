@@ -13,15 +13,14 @@ function RepoInfo({ searchUser, results }) {
     const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
     return differenceInDays;
   }
-
+  const sortedRepos = results.data.sort(
+    (a, b) => b.stargazers_count - a.stargazers_count
+  );
   return (
     <div className="gh__repo-wrapper">
       <div className="gh__repo-container">
-        {results.data &&
-          results.data.map((repo, index) => {
-            if (index > 3) {
-              return;
-            }
+        {sortedRepos &&
+          sortedRepos.slice(0, 4).map((repo) => {
             return (
               <a
                 target="_blank"
@@ -54,13 +53,15 @@ function RepoInfo({ searchUser, results }) {
             );
           })}
       </div>
-      <a
-        target="_blank"
-        href={`https://github.com/orgs/${searchUser}/repositories`}
-        className="gh__repo-all-link gh__repo-link"
-      >
-        View all repositories
-      </a>
+      <div className="gh__repo-bottom-container">
+        <a
+          target="_blank"
+          href={`https://github.com/orgs/${searchUser}/repositories`}
+          className="gh__repo-all-link gh__repo-link"
+        >
+          View all repositories
+        </a>
+      </div>
     </div>
   );
 }

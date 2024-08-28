@@ -13,7 +13,7 @@
 .gh__repo-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     color: var(--light-grey);
     width: 100%;
     border-radius: 16px;
@@ -32,8 +32,9 @@
 
 .gh__repo-card-counter-row {
     display: flex;
-    align-items: end;
-    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
 }
 
 .gh__repo-card-counter {
@@ -46,19 +47,25 @@
 }
 
 .gh__repo-link {
-    text-decoration: none !important;
+    color: var(--light-grey);
+    text-decoration: none;
 }
 
 .gh__repo-link:visited {
     color: var(--light-grey);
 }
 
-.gh__repo-all-link {
+.gh__repo-all-link:hover {
+    text-decoration: underline
+}
+
+.gh__repo-bottom-container {
     display: flex;
+    justify-content: center;
     padding-top: 30px;
     padding-bottom: 50px;
-    justify-content: center;
 }
+
 
 @media only screen and (max-width:640px) {
     .gh__repo-container {

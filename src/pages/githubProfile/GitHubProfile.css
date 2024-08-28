@@ -49,6 +49,9 @@
     padding: 20px;
 }
 
+.gh__main-container {
+    width: 1000px;
+}
 
 .skeleton {
     animation: shimmer 2.2s linear infinite;
@@ -79,3 +82,11 @@
         background-position: 1200px 0;
     }
 }
+
+@media only screen and (max-width:1000px) {
+    .gh__main-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:640px) {}
