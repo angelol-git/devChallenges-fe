@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useQueries } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import Header from "../../components/Header";
 import SearchForm from "../../components/githubProfile/SearchForm";
 import UserInfo from "../../components/githubProfile/UserInfo";
@@ -14,24 +14,51 @@ import "./GitHubProfile.css";
 function GitHubProfile() {
   document.body.style = "background: #20293A;";
   const [searchUser, setSearchUser] = useState("github");
-  const results = useQueries({
-    queries: [
-      {
-        queryKey: ["username", searchUser],
-        queryFn: () => fetchGitHubProfile(searchUser),
-      },
-      {
-        queryKey: ["repos", searchUser],
-        queryFn: () => fetchGitHubRepos(searchUser),
-      },
-    ],
+
+  const userProfile = useQuery({
+    queryKey: ["username", searchUser],
+    queryFn: () => fetchGitHubProfile(searchUser),
+    retry: false,
+  });
+
+  const userRepos = useQuery({
+    queryKey: ["repos"],
+    queryFn: () => fetchGitHubRepos(searchUser),
+    retry: false,
+    enabled: userProfile.isSuccess,
   });
 
   function handleSubmit(event) {
     event.preventDefault();
     setSearchUser(event.target[0].value);
-    results[0].refetch();
-    results[1].refetch();
+  }
+
+  if (userProfile.isError || userRepos.isError) {
+    return (
+      <div className="gh__container">
+        <div className="gh__hero-image-wrapper">
+          <img src={heroImage} className="gh__hero-image" />
+        </div>
+        <div className="gh__header-container">
+          <Header />
+          <SearchForm handleSubmit={handleSubmit} />
+        </div>
+        <main className="gh__main-wrapper-error">
+          <div className="gh__main-container">
+            <h2>Error</h2>
+            {userProfile.error.message === "404" ? (
+              <p>
+                User
+                <span style={{ fontWeight: "bold" }}> {searchUser} </span>
+                does not exist
+              </p>
+            ) : (
+              <p>Can not retrieve GitHub profile.</p>
+            )}
+          </div>
+        </main>
+      </div>
+    );
   }
 
   return (
@@ -45,22 +72,22 @@ function GitHubProfile() {
       </div>
       <main className="gh__main-wrapper">
         <div className="gh__main-container">
-          {results[0].isLoading ? (
+          {userProfile.isLoading ? (
             <UserInfoSkeleton />
           ) : (
             <UserInfo
-              avatar_url={results[0].data.avatar_url}
-              followers={results[0].data.followers}
-              following={results[0].data.following}
-              location={results[0].data.location}
-              title={results[0].data.name}
-              bio={results[0].data.bio}
+              avatar_url={userProfile.data.avatar_url}
+              followers={userProfile.data.followers}
+              following={userProfile.data.following}
+              location={userProfile.data.location}
+              title={userProfile.data.name}
+              bio={userProfile.data.bio}
             />
           )}
-          {results[1].isLoading ? (
+          {userRepos.isLoading || !userProfile.isSuccess ? (
             <RepoInfoSkeleton />
           ) : (
-            <RepoInfo searchUser={searchUser} results={results[1]} />
+            <RepoInfo searchUser={searchUser} results={userRepos.data} />
           )}
         </div>
       </main>

@@ -1,5 +1,6 @@
 async function fetchGitHubRepos(username) {
     //Simulate Load times
+    console.log("Fetching repos");
     return new Promise((resolve, reject) => {
         setTimeout(async () => {
             try {
@@ -17,7 +18,7 @@ async function fetchGitHubRepos(username) {
             catch (error) {
                 reject(error);
             }
-        }, 1000)
+        }, 500)
     });
 }
 

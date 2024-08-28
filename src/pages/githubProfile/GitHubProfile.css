@@ -49,6 +49,17 @@
     padding: 20px;
 }
 
+.gh__main-wrapper-error {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: var(--light-grey);
+}
+
 .gh__main-container {
     width: 1000px;
 }

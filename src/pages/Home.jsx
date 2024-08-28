@@ -23,7 +23,7 @@ function Home() {
           <li>
             <Link to="./gitHubProfile">GitHub Profile</Link>
             <span className="font-small">
-              - React, Text to Speech, Clipboard and modal, React Forms
+              - React, fetch multiple queries and skeleton loading
             </span>
           </li>
         </ul>

@@ -13,7 +13,7 @@ function RepoInfo({ searchUser, results }) {
     const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
     return differenceInDays;
   }
-  const sortedRepos = results.data.sort(
+  const sortedRepos = results.sort(
     (a, b) => b.stargazers_count - a.stargazers_count
   );
   return (
