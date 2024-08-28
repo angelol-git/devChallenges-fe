@@ -1,3 +1,8 @@
+.gh__repo-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
 .gh__repo-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,6 +43,21 @@
 
 .gh__repo-card-updated {
     font-size: 0.75rem;
+}
+
+.gh__repo-link {
+    text-decoration: none !important;
+}
+
+.gh__repo-link:visited {
+    color: var(--light-grey);
+}
+
+.gh__repo-all-link {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
 
 @media only screen and (max-width:640px) {

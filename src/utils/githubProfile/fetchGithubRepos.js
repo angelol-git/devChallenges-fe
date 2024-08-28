@@ -17,7 +17,7 @@ async function fetchGitHubRepos(username) {
             catch (error) {
                 reject(error);
             }
-        }, 5000)
+        }, 1000)
     });
 }
 

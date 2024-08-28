@@ -49,10 +49,6 @@
     padding: 20px;
 }
 
-.gh__meta-container {
-    display: flex;
-    max-width: 1000px;
-}
 
 .skeleton {
     animation: shimmer 2.2s linear infinite;

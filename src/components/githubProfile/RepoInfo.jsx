@@ -5,7 +5,7 @@ import licenseSvg from "../../assets/githubProfile/Chield_alt.svg";
 
 import "./RepoInfo.css";
 
-function RepoInfo({ results }) {
+function RepoInfo({ searchUser, results }) {
   const dateNow = new Date();
   function getUpdatedDate(lastUpdatedDate) {
     const updatedDate = new Date(lastUpdatedDate);
@@ -15,38 +15,52 @@ function RepoInfo({ results }) {
   }
 
   return (
-    <div className="gh__repo-container">
-      {results.data &&
-        results.data.map((repo, index) => {
-          if (index > 3) {
-            return;
-          }
-          return (
-            <div className="gh__repo-card" key={repo.id}>
-              <h3 className="gh__repo-name">{repo.name}</h3>
-              <p className="gh__repo-description">{repo.description}</p>
-              <div className="gh__repo-card-counter-row">
-                {repo.license !== null ? (
+    <div className="gh__repo-wrapper">
+      <div className="gh__repo-container">
+        {results.data &&
+          results.data.map((repo, index) => {
+            if (index > 3) {
+              return;
+            }
+            return (
+              <a
+                target="_blank"
+                href={repo.html_url}
+                className="gh__repo-card gh__repo-link"
+                key={repo.id}
+              >
+                <h3 className="gh__repo-name">{repo.name}</h3>
+                <p className="gh__repo-description">{repo.description}</p>
+                <div className="gh__repo-card-counter-row">
+                  {repo.license !== null ? (
+                    <div className="gh__repo-card-counter">
+                      <img src={licenseSvg} />
+                      {repo.license.spdx_id}
+                    </div>
+                  ) : null}
                   <div className="gh__repo-card-counter">
-                    <img src={licenseSvg} />
-                    {repo.license.spdx_id}
+                    <img src={forkSvg} />
+                    {repo.forks}
                   </div>
-                ) : null}
-                <div className="gh__repo-card-counter">
-                  <img src={forkSvg} />
-                  {repo.forks}
+                  <div className="gh__repo-card-counter ">
+                    <img src={starSvg} />
+                    {repo.stargazers_count}
+                  </div>
+                  <div className="gh__repo-card-updated">
+                    last updated {getUpdatedDate(repo.updated_at)} days ago
+                  </div>
                 </div>
-                <div className="gh__repo-card-counter ">
-                  <img src={starSvg} />
-                  {repo.stargazers_count}
-                </div>
-                <div className="gh__repo-card-updated">
-                  last updated {getUpdatedDate(repo.updated_at)} days ago
-                </div>
-              </div>
-            </div>
-          );
-        })}
+              </a>
+            );
+          })}
+      </div>
+      <a
+        target="_blank"
+        href={`https://github.com/orgs/${searchUser}/repositories`}
+        className="gh__repo-all-link gh__repo-link"
+      >
+        View all repositories
+      </a>
     </div>
   );
 }

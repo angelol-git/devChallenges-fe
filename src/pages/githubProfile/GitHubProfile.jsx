@@ -50,12 +50,13 @@ function GitHubProfile() {
               following={results[0].data.following}
               location={results[0].data.location}
               title={results[0].data.name}
+              bio={results[0].data.bio}
             />
           )}
           {results[1].isLoading ? (
             <RepoInfoSkeleton />
           ) : (
-            <RepoInfo results={results[1]} />
+            <RepoInfo searchUser={searchUser} results={results[1]} />
           )}
         </div>
       </main>

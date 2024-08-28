@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./UserInfo.css";
 
-function UserInfo({ avatar_url, followers, following, location, title }) {
+function UserInfo({ avatar_url, followers, following, location, title, bio }) {
   return (
     <div>
       <div className="gh__profile-top-row">
@@ -29,6 +29,7 @@ function UserInfo({ avatar_url, followers, following, location, title }) {
         </div>
       </div>
       <h2 className="gh__profile-title">{title}</h2>
+      <p className="gh__profile-bio">{bio}</p>
     </div>
   );
 }

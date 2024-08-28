@@ -17,7 +17,7 @@ async function fetchGitHubProfile(username) {
             catch (error) {
                 reject(error);
             }
-        }, 5000)
+        }, 500)
     });
 }
 
