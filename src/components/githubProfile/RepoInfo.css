@@ -39,3 +39,9 @@
 .gh__repo-card-updated {
     font-size: 0.75rem;
 }
+
+@media only screen and (max-width:640px) {
+    .gh__repo-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -17,10 +17,7 @@
 }
 
 .gh__container {
-    background-color: var(--dark-grey);
     font-family: "Be Vietnam Pro", sans-serif;
-    height: 100vh;
-    overflow: auto;
 }
 
 .gh__header-container {
@@ -42,6 +39,7 @@
 }
 
 .gh__main-wrapper {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,4 +52,34 @@
 .gh__meta-container {
     display: flex;
     max-width: 1000px;
+}
+
+.skeleton {
+    animation: shimmer 2.2s linear infinite;
+    background: linear-gradient(to right, #d5d5d5 8%, #ffffff 18%, #d8d8d8 33%);
+    background-size: 1200px 100%;
+}
+
+.skeleton-text {
+    visibility: hidden;
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+
+    100% {
+        background-position: 1200px 0;
+    }
 }

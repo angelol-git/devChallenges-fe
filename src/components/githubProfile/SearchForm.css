@@ -1,6 +1,9 @@
 .gh__search-form-container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .gh__search-form-row {
@@ -9,7 +12,6 @@
     gap: 16px;
     padding: 16px;
     border-radius: 10px;
-
 }
 
 .gh__username-input {
@@ -30,4 +32,11 @@
 .gh__username-input::-ms-input-placeholder {
     /* Edge 12 -18 */
     color: var(--grey);
+}
+
+@media only screen and (max-width:640px) {
+    .gh__search-form-row {
+        width: 100%;
+
+    }
 }

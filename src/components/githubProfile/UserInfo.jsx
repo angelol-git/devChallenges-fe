@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import "./UserInfo.css";
 
-// eslint-disable-next-line react/prop-types
 function UserInfo({ avatar_url, followers, following, location, title }) {
   return (
     <div>

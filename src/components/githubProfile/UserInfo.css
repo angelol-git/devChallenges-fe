@@ -5,8 +5,8 @@
 }
 
 .gh__profile-picture {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     border: 10px solid var(--dark-grey);
     border-radius: 16px;
 }
@@ -38,4 +38,32 @@
     font-size: 2rem;
     font-weight: 500;
     color: var(--light-grey);
+    padding-top: 30px;
+}
+
+
+@media only screen and (max-width:864px) {
+    .gh__profile-top-row {
+        justify-content: space-between;
+        align-items: start;
+    }
+
+
+    .gh__meta-info-container {
+        flex-direction: column;
+
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .gh__meta-info-container {
+        gap: 10px;
+    }
+
+    .gh__meta-info {
+        font-size: 0.825rem;
+        max-width: 200px;
+        justify-content: start;
+        gap: 10px;
+    }
 }
