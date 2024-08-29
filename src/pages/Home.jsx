@@ -27,6 +27,12 @@ function Home() {
               - React, fetch multiple queries and skeleton loading
             </span>
           </li>
+          <li>
+            <Link to="./worldRanks">World Ranks</Link>
+            <span className="font-small">
+              - pagination,filtering, multiple pages
+            </span>
+          </li>
         </ul>
       </section>
     </main>
