@@ -1,8 +1,189 @@
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import searchSvg from "../../assets/worldRanks/Search.svg";
+import fetchCountries from "../../utils/worldRanks/fetchCountries";
 import "./CountryList.css";
 function CountryList() {
+  const [sortFilter, setSortFilter] = useState("Population");
+  const [regionFilter, setRegionFilter] = useState({
+    Americas: true,
+    Antarctica: false,
+    Africa: true,
+    Asia: true,
+    Europe: true,
+  });
+  const [statusFilter, setStatusFilter] = useState(true);
+
+  const countryResult = useQuery({
+    queryKey: ["test"],
+    queryFn: () => fetchCountries(),
+    retry: false,
+  });
+
+  function handleSearch(event) {
+    event.preventDefault();
+  }
+
+  function handleCheckbox(event) {
+    const { name, checked } = event.target;
+    setRegionFilter((prevState) => ({
+      ...prevState,
+      [name]: checked,
+    }));
+  }
+
+  function handleRadio(event) {
+    const value = event.target.value;
+    if (value === "UN") {
+      setStatusFilter(true);
+    } else {
+      setStatusFilter(false);
+    }
+  }
+  if (countryResult.isError) {
+    return <div>Error</div>;
+  }
+
+  if (countryResult.isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div>
-      <div></div>
+    <div className="wr__country-list-container">
+      <div className="wr__country-list-top-row">
+        <div className="wr__country-length">
+          Found {countryResult.data.length} countries
+        </div>
+        <form onSubmit={handleSearch}>
+          <div className="wr__search-row">
+            <img src={searchSvg} />
+            <input
+              type="text"
+              placeholder="Search by Name, Region, Subregion"
+              className="wr__search-input"
+            />
+          </div>
+        </form>
+      </div>
+      <div className="wr__main-content-container">
+        <form className="wr__filter-container">
+          <div className="wr__filter">
+            <label htmlFor="wr_sort" className="wr__filter-label">
+              Sort by
+            </label>
+            <select
+              name="wr_sort"
+              id="wr_sort"
+              className="wr__sort-input"
+              value={sortFilter}
+              onChange={(event) => {
+                setSortFilter(event.target.value);
+              }}
+            >
+              <option value="Population">Population</option>
+              <option value="Name">Name</option>
+            </select>
+          </div>
+          <div className="wr__filter">
+            <label htmlFor="wr__region" className="wr__filter-label">
+              Region
+            </label>
+            <div className="wr__region-container">
+              {Object.entries(regionFilter).map(([key, value]) => {
+                return (
+                  <div key={key}>
+                    <input
+                      type="checkbox"
+                      id={key}
+                      name={key}
+                      onChange={handleCheckbox}
+                      checked={value ? "checked" : ""}
+                      className="wr__region-checkbox"
+                    />
+                    <label htmlFor={key} className="wr__region-label">
+                      {key}
+                    </label>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="wr__filter">
+            <label htmlFor="wr__region" className="wr__filter-label">
+              Status
+            </label>
+            <div className="wr__status-radio-container">
+              <input
+                type="radio"
+                id="UN"
+                name="Status"
+                value="UN"
+                checked={statusFilter ? "checked" : ""}
+                onChange={handleRadio}
+                className="wr__status-radio"
+              />
+              <label htmlFor="UN" className="wr__status-label">
+                Member of the United Nations
+              </label>
+            </div>
+
+            <div className="wr__status-radio-container">
+              <input
+                type="radio"
+                id="Independent"
+                name="Status"
+                value="Independent"
+                checked={statusFilter ? "" : "checked"}
+                onChange={handleRadio}
+                className="wr__status-radio"
+              />
+              <label htmlFor="Independent" className="wr__status-label">
+                Independent
+              </label>
+            </div>
+          </div>
+        </form>
+        <div className="wr__table-container">
+          <table className="wr__table">
+            <thead className="wr__table-head">
+              <tr className="wr__table-header-row">
+                <th className="wr__filter-label" scope="col">
+                  Flag
+                </th>
+                <th className="wr__filter-label" scope="col">
+                  Name
+                </th>
+                <th className="wr__filter-label" scope="col">
+                  Population
+                </th>
+                <th className="wr__filter-label" scope="col">
+                  Area (km<sup>2</sup>)
+                </th>
+                <th className="wr__filter-label" scope="col">
+                  Region
+                </th>
+              </tr>
+            </thead>
+            <tbody className="wr__table-body">
+              {countryResult.data.map((item) => {
+                return (
+                  <tr key={item.name.common} className="wr__table-data">
+                    <td className="wr__table-flag">{item.flag}</td>
+                    <td>
+                      {item.name.common.length > 20
+                        ? `${item.name.common.slice(0, 20)}...`
+                        : item.name.common}
+                    </td>
+                    <td>{item.population}</td>
+                    <td>{item.area}</td>
+                    <td>{item.region}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

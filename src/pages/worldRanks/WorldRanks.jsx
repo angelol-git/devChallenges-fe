@@ -5,19 +5,21 @@ import logoSvg from "../../assets/worldRanks/Logo.svg";
 import "./WorldRanks.css";
 
 function WorldRanks() {
+  document.body.style = "background: #1B1D1F";
   return (
     <div className="wr__container">
-      <div className="wr__hero-image-wrapper">
+      <div className="wr__hero-container">
         <img src={heroImage} className="wr__hero-image" />
-      </div>
-      <div className="wr__header-container">
-        <Header />
-        <div className="wr__header-logo-container">
-          <img src={logoSvg} alt="chart company logo" />
-          <CountryList />
+        <div className="wr__header-container">
+          <Header />
+          <div className="wr__header-logo-container">
+            <img src={logoSvg} alt="chart company logo" />
+          </div>
         </div>
       </div>
-      <main></main>
+      <main className="wr__main-container">
+        <CountryList />
+      </main>
     </div>
   );
 }

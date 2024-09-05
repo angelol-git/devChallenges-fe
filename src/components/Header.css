@@ -1,5 +1,6 @@
 .header-container {
     padding: 10px;
+    z-index: 999;
 }
 
 .home-link {
