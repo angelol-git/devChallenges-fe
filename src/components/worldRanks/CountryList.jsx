@@ -1,88 +1,21 @@
-import { useEffect, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import useCountryData from "../../hooks/worldRanks/useCountryData";
 import searchSvg from "../../assets/worldRanks/Search.svg";
-import fetchCountries from "../../utils/worldRanks/fetchCountries";
+
 import "./CountryList.css";
 function CountryList() {
-  const [tableData, setTableData] = useState([]);
-  const [sortFilter, setSortFilter] = useState("Population");
-  const [regionFilter, setRegionFilter] = useState({
-    Americas: true,
-    Antarctica: false,
-    Africa: true,
-    Asia: true,
-    Europe: true,
-  });
-  const [statusFilter, setStatusFilter] = useState(true);
+  const {
+    tableData,
+    sortFilter,
+    setSortFilter,
+    regionFilter,
+    setRegionFilter,
+    statusFilter,
+    setStatusFilter,
+    countryResult,
+    handleSearch,
+    handleRadio,
+  } = useCountryData();
 
-  const countryResult = useQuery({
-    queryKey: ["test"],
-    queryFn: () => fetchCountries(),
-    retry: false,
-  });
-
-  useEffect(() => {
-    if (countryResult.data) {
-      //Initial Setup
-      const sortedPopData = countryResult.data.sort(
-        (a, b) => a.population - b.population
-      );
-
-      const regionFilteredData = sortedPopData.filter((country) => {
-        return regionFilter[country.region] === true;
-      });
-      setTableData(regionFilteredData);
-    }
-  }, [countryResult.data]);
-
-  useEffect(() => {
-    if (sortFilter) {
-      handleSort();
-    }
-  }, [sortFilter]);
-
-  useEffect(() => {
-    if (regionFilter) {
-      handleCheckbox();
-    }
-  }, [regionFilter]);
-
-  function handleSearch(event) {
-    event.preventDefault();
-  }
-
-  function handleSort() {
-    let sortedData = [...tableData];
-    if (sortFilter === "Name") {
-      sortedData.sort((a, b) => a.name.common.localeCompare(b.name.common));
-    }
-
-    if (sortFilter === "Population") {
-      sortedData.sort((a, b) => a.population - b.population);
-    }
-
-    setTableData(sortedData);
-  }
-
-  function handleCheckbox() {
-    if (countryResult.data) {
-      const regionFilteredData = countryResult.data.filter((country) => {
-        return regionFilter[country.region] === true;
-      });
-
-      setTableData(regionFilteredData);
-      console.log(tableData);
-    }
-  }
-
-  function handleRadio(event) {
-    const value = event.target.value;
-    if (value === "UN") {
-      setStatusFilter(true);
-    } else {
-      setStatusFilter(false);
-    }
-  }
   if (countryResult.isError) {
     return <div>Error</div>;
   }
