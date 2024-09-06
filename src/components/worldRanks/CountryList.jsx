@@ -110,6 +110,11 @@ function CountryList() {
                 className="wr__status-radio"
               />
               <label htmlFor="UN" className="wr__status-label">
+                <span
+                  className={`wr__status-checkbox ${
+                    statusFilter ? "checked" : ""
+                  }`}
+                ></span>
                 Member of the United Nations
               </label>
             </div>
@@ -127,6 +132,11 @@ function CountryList() {
                 className="wr__status-radio"
               />
               <label htmlFor="Independent" className="wr__status-label">
+                <span
+                  className={`wr__status-checkbox ${
+                    statusFilter ? "" : "checked"
+                  }`}
+                ></span>
                 Independent
               </label>
             </div>

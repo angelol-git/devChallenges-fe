@@ -98,14 +98,45 @@
 }
 
 .wr__status-label {
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--light-grey);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .wr__status-radio-container {
     display: flex;
     align-items: baseline;
     gap: 15px;
+}
+
+.wr__status-radio {
+    display: none;
+}
+
+.wr__status-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--grey);
+    border-radius: 4px;
+    background-color: var(--black);
+
+    cursor: pointer;
+}
+
+.wr__status-checkbox.checked {
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+}
+
+.wr__status-checkbox.checked::after {
+    content: "✓";
+    color: var(--light-grey);
 }
 
 .wr__table-header-row {
