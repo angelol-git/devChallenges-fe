@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import searchSvg from "../../assets/worldRanks/Search.svg";
 import fetchCountries from "../../utils/worldRanks/fetchCountries";
 import "./CountryList.css";
 function CountryList() {
+  const [tableData, setTableData] = useState([]);
   const [sortFilter, setSortFilter] = useState("Population");
   const [regionFilter, setRegionFilter] = useState({
     Americas: true,
@@ -20,16 +21,58 @@ function CountryList() {
     retry: false,
   });
 
+  useEffect(() => {
+    if (countryResult.data) {
+      //Initial Setup
+      const sortedPopData = countryResult.data.sort(
+        (a, b) => a.population - b.population
+      );
+
+      const regionFilteredData = sortedPopData.filter((country) => {
+        return regionFilter[country.region] === true;
+      });
+      setTableData(regionFilteredData);
+    }
+  }, [countryResult.data]);
+
+  useEffect(() => {
+    if (sortFilter) {
+      handleSort();
+    }
+  }, [sortFilter]);
+
+  useEffect(() => {
+    if (regionFilter) {
+      handleCheckbox();
+    }
+  }, [regionFilter]);
+
   function handleSearch(event) {
     event.preventDefault();
   }
 
-  function handleCheckbox(event) {
-    const { name, checked } = event.target;
-    setRegionFilter((prevState) => ({
-      ...prevState,
-      [name]: checked,
-    }));
+  function handleSort() {
+    let sortedData = [...tableData];
+    if (sortFilter === "Name") {
+      sortedData.sort((a, b) => a.name.common.localeCompare(b.name.common));
+    }
+
+    if (sortFilter === "Population") {
+      sortedData.sort((a, b) => a.population - b.population);
+    }
+
+    setTableData(sortedData);
+  }
+
+  function handleCheckbox() {
+    if (countryResult.data) {
+      const regionFilteredData = countryResult.data.filter((country) => {
+        return regionFilter[country.region] === true;
+      });
+
+      setTableData(regionFilteredData);
+      console.log(tableData);
+    }
   }
 
   function handleRadio(event) {
@@ -48,11 +91,15 @@ function CountryList() {
     return <div>Loading...</div>;
   }
 
+  if (!tableData) {
+    return <p>No data available</p>;
+  }
+
   return (
     <div className="wr__country-list-container">
       <div className="wr__country-list-top-row">
         <div className="wr__country-length">
-          Found {countryResult.data.length} countries
+          Found {tableData.length} countries
         </div>
         <form onSubmit={handleSearch}>
           <div className="wr__search-row">
@@ -96,8 +143,14 @@ function CountryList() {
                       type="checkbox"
                       id={key}
                       name={key}
-                      onChange={handleCheckbox}
-                      checked={value ? "checked" : ""}
+                      onChange={(event) => {
+                        const { name, checked } = event.target;
+                        setRegionFilter((prevState) => ({
+                          ...prevState,
+                          [name]: checked,
+                        }));
+                      }}
+                      checked={value}
                       className="wr__region-checkbox"
                     />
                     <label htmlFor={key} className="wr__region-label">
@@ -165,7 +218,7 @@ function CountryList() {
               </tr>
             </thead>
             <tbody className="wr__table-body">
-              {countryResult.data.map((item) => {
+              {tableData.map((item) => {
                 return (
                   <tr key={item.name.common} className="wr__table-data">
                     <td className="wr__table-flag">{item.flag}</td>
@@ -182,6 +235,11 @@ function CountryList() {
               })}
             </tbody>
           </table>
+          {tableData && tableData.length === 0 ? (
+            <p className="wr__table-error">
+              No countries available with the filter(s) selected.
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
