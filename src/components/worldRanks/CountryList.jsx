@@ -12,7 +12,8 @@ function CountryList() {
     statusFilter,
     setStatusFilter,
     countryResult,
-    handleSearch,
+    searchBar,
+    setSearchBar,
   } = useCountryData();
 
   if (countryResult.isError) {
@@ -33,13 +34,22 @@ function CountryList() {
         <div className="wr__country-length">
           Found {tableData.length} countries
         </div>
-        <form onSubmit={handleSearch}>
+        <form
+          onSubmit={(event) => {
+            event.preventDefault;
+          }}
+        >
           <div className="wr__search-row">
             <img src={searchSvg} />
             <input
               type="text"
-              placeholder="Search by Name, Region, Subregion"
+              id="wr__search-input"
+              placeholder="Search by Name, Region"
               className="wr__search-input"
+              value={searchBar}
+              onChange={(event) => {
+                setSearchBar(event.target.value);
+              }}
             />
           </div>
         </form>
@@ -64,9 +74,9 @@ function CountryList() {
             </select>
           </div>
           <div className="wr__filter">
-            <label htmlFor="wr__region" className="wr__filter-label">
+            <legend htmlFor="wr__region" className="wr__filter-label">
               Region
-            </label>
+            </legend>
             <div className="wr__region-container">
               {Object.entries(regionFilter).map(([key, value]) => {
                 return (
@@ -94,9 +104,9 @@ function CountryList() {
             </div>
           </div>
           <div className="wr__filter">
-            <label htmlFor="wr__region" className="wr__filter-label">
+            <legend htmlFor="wr__region" className="wr__filter-label">
               Status
-            </label>
+            </legend>
             <div className="wr__status-radio-container">
               <input
                 type="radio"

@@ -13,6 +13,7 @@ function useCountryData() {
     Oceania: false,
   });
   const [statusFilter, setStatusFilter] = useState(true);
+  const [searchBar, setSearchBar] = useState("");
 
   const countryResult = useQuery({
     queryKey: ["test"],
@@ -58,6 +59,12 @@ function useCountryData() {
     setTableData(sortedData);
   }, [statusFilter]);
 
+  useEffect(() => {
+    const searchFilteredData = handleSearch(countryResult.data);
+    const sortedData = handleSort(searchFilteredData);
+    setTableData(sortedData);
+  }, [searchBar]);
+
   function handleSort(data) {
     if (data) {
       let sortedData = [...data];
@@ -92,8 +99,17 @@ function useCountryData() {
     }
   }
 
-  function handleSearch(event) {
-    event.preventDefault();
+  function handleSearch(data) {
+    if (data) {
+      const searchFilteredData = data.filter((country) => {
+        return (
+          country.name.common.toLowerCase().includes(searchBar.toLowerCase()) ||
+          country.region.toLowerCase().includes(searchBar.toLowerCase())
+        );
+      });
+
+      return searchFilteredData;
+    }
   }
 
   return {
@@ -105,7 +121,8 @@ function useCountryData() {
     statusFilter,
     setStatusFilter,
     countryResult,
-    handleSearch,
+    searchBar,
+    setSearchBar,
   };
 }
 
