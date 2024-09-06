@@ -13,7 +13,6 @@ function CountryList() {
     setStatusFilter,
     countryResult,
     handleSearch,
-    handleRadio,
   } = useCountryData();
 
   if (countryResult.isError) {
@@ -105,7 +104,9 @@ function CountryList() {
                 name="Status"
                 value="UN"
                 checked={statusFilter ? "checked" : ""}
-                onChange={handleRadio}
+                onChange={() => {
+                  setStatusFilter(true);
+                }}
                 className="wr__status-radio"
               />
               <label htmlFor="UN" className="wr__status-label">
@@ -120,7 +121,9 @@ function CountryList() {
                 name="Status"
                 value="Independent"
                 checked={statusFilter ? "" : "checked"}
-                onChange={handleRadio}
+                onChange={() => {
+                  setStatusFilter(false);
+                }}
                 className="wr__status-radio"
               />
               <label htmlFor="Independent" className="wr__status-label">
@@ -160,8 +163,8 @@ function CountryList() {
                         ? `${item.name.common.slice(0, 20)}...`
                         : item.name.common}
                     </td>
-                    <td>{item.population}</td>
-                    <td>{item.area}</td>
+                    <td>{item.population.toLocaleString()}</td>
+                    <td>{item.area.toLocaleString()}</td>
                     <td>{item.region}</td>
                   </tr>
                 );

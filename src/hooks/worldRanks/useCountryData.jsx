@@ -10,6 +10,7 @@ function useCountryData() {
     Africa: true,
     Asia: true,
     Europe: true,
+    Oceania: false,
   });
   const [statusFilter, setStatusFilter] = useState(true);
 
@@ -51,6 +52,12 @@ function useCountryData() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [regionFilter]);
 
+  useEffect(() => {
+    const statusFilteredData = handleStatus(countryResult.data);
+    const sortedData = handleSort(statusFilteredData);
+    setTableData(sortedData);
+  }, [statusFilter]);
+
   function handleSort(data) {
     if (data) {
       let sortedData = [...data];
@@ -76,18 +83,19 @@ function useCountryData() {
     }
   }
 
+  function handleStatus(data) {
+    if (data) {
+      const statusFilteredData = data.filter((country) => {
+        return country["independent"] === statusFilter;
+      });
+      return statusFilteredData;
+    }
+  }
+
   function handleSearch(event) {
     event.preventDefault();
   }
 
-  function handleRadio(event) {
-    const value = event.target.value;
-    if (value === "UN") {
-      setStatusFilter(true);
-    } else {
-      setStatusFilter(false);
-    }
-  }
   return {
     tableData,
     sortFilter,
@@ -98,7 +106,6 @@ function useCountryData() {
     setStatusFilter,
     countryResult,
     handleSearch,
-    handleRadio,
   };
 }
 
