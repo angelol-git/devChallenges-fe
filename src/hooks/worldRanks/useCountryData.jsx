@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import fetchCountries from "../../utils/worldRanks/fetchCountries";
+
 function useCountryData() {
   const [tableData, setTableData] = useState([]);
   const [sortFilter, setSortFilter] = useState("Population");

@@ -1,7 +1,11 @@
+import { useState, useMemo } from "react";
+import Pagination from "./Pagination";
 import useCountryData from "../../hooks/worldRanks/useCountryData";
 import searchSvg from "../../assets/worldRanks/Search.svg";
 
 import "./CountryList.css";
+
+const PageSize = 20;
 function CountryList() {
   const {
     tableData,
@@ -15,6 +19,23 @@ function CountryList() {
     searchBar,
     setSearchBar,
   } = useCountryData();
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const paginatedTableData = useMemo(() => {
+    if (tableData) {
+      const totalPages = Math.ceil(tableData.length / PageSize);
+      const firstPageIndex = (currentPage - 1) * PageSize;
+      const lastPageIndex = firstPageIndex + PageSize;
+
+      if (totalPages !== 0) {
+        if (totalPages <= currentPage) {
+          setCurrentPage(totalPages);
+        }
+      }
+
+      return tableData.slice(firstPageIndex, lastPageIndex);
+    }
+  }, [currentPage, tableData]);
 
   if (countryResult.isError) {
     return <div>Error</div>;
@@ -174,21 +195,22 @@ function CountryList() {
               </tr>
             </thead>
             <tbody className="wr__table-body">
-              {tableData.map((item) => {
-                return (
-                  <tr key={item.name.common} className="wr__table-data">
-                    <td className="wr__table-flag">{item.flag}</td>
-                    <td>
-                      {item.name.common.length > 20
-                        ? `${item.name.common.slice(0, 20)}...`
-                        : item.name.common}
-                    </td>
-                    <td>{item.population.toLocaleString()}</td>
-                    <td>{item.area.toLocaleString()}</td>
-                    <td>{item.region}</td>
-                  </tr>
-                );
-              })}
+              {paginatedTableData &&
+                paginatedTableData.map((item) => {
+                  return (
+                    <tr key={item.name.common} className="wr__table-data">
+                      <td className="wr__table-flag">{item.flag}</td>
+                      <td>
+                        {item.name.common.length > 20
+                          ? `${item.name.common.slice(0, 20)}...`
+                          : item.name.common}
+                      </td>
+                      <td>{item.population.toLocaleString()}</td>
+                      <td>{item.area.toLocaleString()}</td>
+                      <td>{item.region}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
           {tableData && tableData.length === 0 ? (
@@ -196,6 +218,13 @@ function CountryList() {
               No countries available with the filter(s) selected.
             </p>
           ) : null}
+
+          <Pagination
+            currentPage={currentPage}
+            totalCount={tableData.length}
+            pageSize={PageSize}
+            handlePageChange={(page) => setCurrentPage(page)}
+          />
         </div>
       </div>
     </div>
