@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import SimpleCoffee from "./pages/simpleCoffee/simpleCoffee";
 import Translate from "./pages/translate/Translate";
 import GitHubProfile from "./pages/githubProfile/GitHubProfile";
-import WorldRanks from "./pages/worldRanks/WorldRanks";
+import CountryTable from "./pages/worldRanks/CountryTable";
+import Country from "./pages/worldRanks/Country";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,7 +25,12 @@ function App() {
           <Route path="/simpleCoffee" element={<SimpleCoffee />} />
           <Route path="/translate" element={<Translate />} />
           <Route path="/githubProfile" element={<GitHubProfile />} />
-          <Route path="/worldRanks" element={<WorldRanks />} />
+          <Route path="/countryTable" element={<CountryTable />} />
+
+          <Route
+            path="/country/:name/:official/:flag/:population/:area/:capital/:subregion/:languages/:currencies/:region"
+            element={<Country />}
+          />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

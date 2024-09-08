@@ -175,6 +175,14 @@
     font-size: 5rem;
 }
 
+.wr__table-name-link {
+    color: var(--blue);
+}
+
+.wr__table-name-link:visited {
+    color: var(--blue);
+}
+
 .wr__table-error {
     padding-top: 20px;
     font-weight: bold;

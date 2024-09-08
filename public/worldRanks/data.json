@@ -11,7 +11,11 @@
       }
     },
     "independent": false,
+    "currencies": { "SHP": { "name": "Saint Helena pound", "symbol": "£" } },
+    "capital": ["King Edward Point"],
     "region": "Antarctic",
+    "subregion": "",
+    "languages": { "eng": "English" },
     "area": 3903.0,
     "flag": "🇬🇸",
     "population": 30
@@ -23,7 +27,13 @@
       "nativeName": { "eng": { "official": "Grenada", "common": "Grenada" } }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["St. George's"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 344.0,
     "flag": "🇬🇩",
     "population": 112519
@@ -43,7 +53,16 @@
       }
     },
     "independent": true,
+    "currencies": { "CHF": { "name": "Swiss franc", "symbol": "Fr." } },
+    "capital": ["Bern"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": {
+      "fra": "French",
+      "gsw": "Swiss German",
+      "ita": "Italian",
+      "roh": "Romansh"
+    },
     "area": 41284.0,
     "flag": "🇨🇭",
     "population": 8654622
@@ -60,7 +79,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SLL": { "name": "Sierra Leonean leone", "symbol": "Le" } },
+    "capital": ["Freetown"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 71740.0,
     "flag": "🇸🇱",
     "population": 7976985
@@ -74,7 +97,11 @@
       }
     },
     "independent": true,
+    "currencies": { "HUF": { "name": "Hungarian forint", "symbol": "Ft" } },
+    "capital": ["Budapest"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "hun": "Hungarian" },
     "area": 93028.0,
     "flag": "🇭🇺",
     "population": 9749763
@@ -86,7 +113,11 @@
       "nativeName": { "zho": { "official": "中華民國", "common": "台灣" } }
     },
     "independent": false,
+    "currencies": { "TWD": { "name": "New Taiwan dollar", "symbol": "$" } },
+    "capital": ["Taipei"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "zho": "Chinese" },
     "area": 36193.0,
     "flag": "🇹🇼",
     "population": 23503349
@@ -103,7 +134,11 @@
       }
     },
     "independent": false,
+    "currencies": { "XPF": { "name": "CFP franc", "symbol": "₣" } },
+    "capital": ["Mata-Utu"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "fra": "French" },
     "area": 142.0,
     "flag": "🇼🇫",
     "population": 11750
@@ -115,7 +150,11 @@
       "nativeName": { "eng": { "official": "Barbados", "common": "Barbados" } }
     },
     "independent": true,
+    "currencies": { "BBD": { "name": "Barbadian dollar", "symbol": "$" } },
+    "capital": ["Bridgetown"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 430.0,
     "flag": "🇧🇧",
     "population": 287371
@@ -132,7 +171,11 @@
       }
     },
     "independent": false,
+    "currencies": { "NZD": { "name": "New Zealand dollar", "symbol": "$" } },
+    "capital": ["Adamstown"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English" },
     "area": 47.0,
     "flag": "🇵🇳",
     "population": 56
@@ -149,7 +192,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Yamoussoukro"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 322463.0,
     "flag": "🇨🇮",
     "population": 26378275
@@ -163,7 +212,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TND": { "name": "Tunisian dinar", "symbol": "د.ت" } },
+    "capital": ["Tunis"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic" },
     "area": 163610.0,
     "flag": "🇹🇳",
     "population": 11818618
@@ -177,7 +230,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Rome"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "ita": "Italian" },
     "area": 301336.0,
     "flag": "🇮🇹",
     "population": 59554023
@@ -191,7 +248,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Porto-Novo"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 112622.0,
     "flag": "🇧🇯",
     "population": 12123198
@@ -205,7 +268,11 @@
       }
     },
     "independent": true,
+    "currencies": { "IDR": { "name": "Indonesian rupiah", "symbol": "Rp" } },
+    "capital": ["Jakarta"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "ind": "Indonesian" },
     "area": 1904569.0,
     "flag": "🇮🇩",
     "population": 273523621
@@ -219,7 +286,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CVE": { "name": "Cape Verdean escudo", "symbol": "Esc" } },
+    "capital": ["Praia"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "por": "Portuguese" },
     "area": 4033.0,
     "flag": "🇨🇻",
     "population": 555988
@@ -236,7 +307,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Basseterre"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 261.0,
     "flag": "🇰🇳",
     "population": 53192
@@ -253,7 +330,11 @@
       }
     },
     "independent": true,
+    "currencies": { "LAK": { "name": "Lao kip", "symbol": "₭" } },
+    "capital": ["Vientiane"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "lao": "Lao" },
     "area": 236800.0,
     "flag": "🇱🇦",
     "population": 7275556
@@ -274,7 +355,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Kralendijk"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English", "nld": "Dutch", "pap": "Papiamento" },
     "area": 328.0,
     "flag": "🇧🇶",
     "population": 25987
@@ -289,7 +374,11 @@
       }
     },
     "independent": true,
+    "currencies": { "UGX": { "name": "Ugandan shilling", "symbol": "Sh" } },
+    "capital": ["Kampala"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English", "swa": "Swahili" },
     "area": 241550.0,
     "flag": "🇺🇬",
     "population": 45741000
@@ -303,7 +392,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Andorra la Vella"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "cat": "Catalan" },
     "area": 468.0,
     "flag": "🇦🇩",
     "population": 77265
@@ -318,7 +411,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BIF": { "name": "Burundian franc", "symbol": "Fr" } },
+    "capital": ["Gitega"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "fra": "French", "run": "Kirundi" },
     "area": 27834.0,
     "flag": "🇧🇮",
     "population": 11890781
@@ -375,7 +472,23 @@
       }
     },
     "independent": true,
+    "currencies": { "ZAR": { "name": "South African rand", "symbol": "R" } },
+    "capital": ["Pretoria", "Bloemfontein", "Cape Town"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": {
+      "afr": "Afrikaans",
+      "eng": "English",
+      "nbl": "Southern Ndebele",
+      "nso": "Northern Sotho",
+      "sot": "Southern Sotho",
+      "ssw": "Swazi",
+      "tsn": "Tswana",
+      "tso": "Tsonga",
+      "ven": "Venda",
+      "xho": "Xhosa",
+      "zul": "Zulu"
+    },
     "area": 1221037.0,
     "flag": "🇿🇦",
     "population": 59308690
@@ -389,7 +502,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Paris"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "fra": "French" },
     "area": 551695.0,
     "flag": "🇫🇷",
     "population": 67391582
@@ -403,7 +520,11 @@
       }
     },
     "independent": true,
+    "currencies": { "LYD": { "name": "Libyan dinar", "symbol": "ل.د" } },
+    "capital": ["Tripoli"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic" },
     "area": 1759540.0,
     "flag": "🇱🇾",
     "population": 6871287
@@ -417,7 +538,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MXN": { "name": "Mexican peso", "symbol": "$" } },
+    "capital": ["Mexico City"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "spa": "Spanish" },
     "area": 1964375.0,
     "flag": "🇲🇽",
     "population": 128932753
@@ -431,7 +556,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Libreville"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "fra": "French" },
     "area": 267668.0,
     "flag": "🇬🇦",
     "population": 2225728
@@ -456,7 +587,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Saipan"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "cal": "Carolinian", "cha": "Chamorro", "eng": "English" },
     "area": 464.0,
     "flag": "🇲🇵",
     "population": 57557
@@ -473,7 +608,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MKD": { "name": "denar", "symbol": "den" } },
+    "capital": ["Skopje"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "mkd": "Macedonian" },
     "area": 25713.0,
     "flag": "🇲🇰",
     "population": 2077132
@@ -487,7 +626,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CNY": { "name": "Chinese yuan", "symbol": "¥" } },
+    "capital": ["Beijing"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "zho": "Chinese" },
     "area": 9706961.0,
     "flag": "🇨🇳",
     "population": 1402112000
@@ -501,7 +644,11 @@
       }
     },
     "independent": true,
+    "currencies": { "YER": { "name": "Yemeni rial", "symbol": "﷼" } },
+    "capital": ["Sana'a"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 527968.0,
     "flag": "🇾🇪",
     "population": 29825968
@@ -518,7 +665,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Gustavia"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "fra": "French" },
     "area": 21.0,
     "flag": "🇧🇱",
     "population": 4255
@@ -534,7 +685,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "GBP": { "name": "British pound", "symbol": "£" },
+      "GGP": { "name": "Guernsey pound", "symbol": "£" }
+    },
+    "capital": ["St. Peter Port"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "eng": "English", "fra": "French", "nfr": "Guernésiais" },
     "area": 78.0,
     "flag": "🇬🇬",
     "population": 62999
@@ -548,7 +706,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "SBD": { "name": "Solomon Islands dollar", "symbol": "$" }
+    },
+    "capital": ["Honiara"],
     "region": "Oceania",
+    "subregion": "Melanesia",
+    "languages": { "eng": "English" },
     "area": 28896.0,
     "flag": "🇸🇧",
     "population": 686878
@@ -565,7 +729,11 @@
       }
     },
     "independent": false,
+    "currencies": { "NOK": { "name": "krone", "symbol": "kr" } },
+    "capital": ["Longyearbyen"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "nor": "Norwegian" },
     "area": 61399.0,
     "flag": "🇸🇯",
     "population": 2562
@@ -580,7 +748,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "DKK": { "name": "Danish krone", "symbol": "kr" },
+      "FOK": { "name": "Faroese króna", "symbol": "kr" }
+    },
+    "capital": ["Tórshavn"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "dan": "Danish", "fao": "Faroese" },
     "area": 1393.0,
     "flag": "🇫🇴",
     "population": 48865
@@ -598,7 +773,11 @@
       }
     },
     "independent": true,
+    "currencies": { "UZS": { "name": "Uzbekistani soʻm", "symbol": "so'm" } },
+    "capital": ["Tashkent"],
     "region": "Asia",
+    "subregion": "Central Asia",
+    "languages": { "rus": "Russian", "uzb": "Uzbek" },
     "area": 447400.0,
     "flag": "🇺🇿",
     "population": 34232050
@@ -612,7 +791,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EGP": { "name": "Egyptian pound", "symbol": "£" } },
+    "capital": ["Cairo"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic" },
     "area": 1002450.0,
     "flag": "🇪🇬",
     "population": 102334403
@@ -626,7 +809,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Dakar"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 196722.0,
     "flag": "🇸🇳",
     "population": 16743930
@@ -647,7 +836,11 @@
       }
     },
     "independent": true,
+    "currencies": { "LKR": { "name": "Sri Lankan rupee", "symbol": "Rs  රු" } },
+    "capital": ["Sri Jayawardenepura Kotte"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "sin": "Sinhala", "tam": "Tamil" },
     "area": 65610.0,
     "flag": "🇱🇰",
     "population": 21919000
@@ -659,7 +852,15 @@
       "nativeName": { "ara": { "official": "دولة فلسطين", "common": "فلسطين" } }
     },
     "independent": false,
+    "currencies": {
+      "EGP": { "name": "Egyptian pound", "symbol": "E£" },
+      "ILS": { "name": "Israeli new shekel", "symbol": "₪" },
+      "JOD": { "name": "Jordanian dinar", "symbol": "JD" }
+    },
+    "capital": ["Ramallah", "Jerusalem"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 6220.0,
     "flag": "🇵🇸",
     "population": 4803269
@@ -673,7 +874,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BDT": { "name": "Bangladeshi taka", "symbol": "৳" } },
+    "capital": ["Dhaka"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "ben": "Bengali" },
     "area": 147570.0,
     "flag": "🇧🇩",
     "population": 164689383
@@ -689,7 +894,11 @@
       }
     },
     "independent": true,
+    "currencies": { "PEN": { "name": "Peruvian sol", "symbol": "S/ " } },
+    "capital": ["Lima"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "aym": "Aymara", "que": "Quechua", "spa": "Spanish" },
     "area": 1285216.0,
     "flag": "🇵🇪",
     "population": 32971846
@@ -706,7 +915,16 @@
       }
     },
     "independent": true,
+    "currencies": { "SGD": { "name": "Singapore dollar", "symbol": "$" } },
+    "capital": ["Singapore"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": {
+      "eng": "English",
+      "zho": "Chinese",
+      "msa": "Malay",
+      "tam": "Tamil"
+    },
     "area": 710.0,
     "flag": "🇸🇬",
     "population": 5685807
@@ -720,7 +938,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TRY": { "name": "Turkish lira", "symbol": "₺" } },
+    "capital": ["Ankara"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "tur": "Turkish" },
     "area": 783562.0,
     "flag": "🇹🇷",
     "population": 84339067
@@ -742,7 +964,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AFN": { "name": "Afghan afghani", "symbol": "؋" } },
+    "capital": ["Kabul"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "prs": "Dari", "pus": "Pashto", "tuk": "Turkmen" },
     "area": 652230.0,
     "flag": "🇦🇫",
     "population": 40218234
@@ -757,7 +983,11 @@
       }
     },
     "independent": false,
+    "currencies": { "AWG": { "name": "Aruban florin", "symbol": "ƒ" } },
+    "capital": ["Oranjestad"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "nld": "Dutch", "pap": "Papiamento" },
     "area": 180.0,
     "flag": "🇦🇼",
     "population": 106766
@@ -772,7 +1002,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "CKD": { "name": "Cook Islands dollar", "symbol": "$" },
+      "NZD": { "name": "New Zealand dollar", "symbol": "$" }
+    },
+    "capital": ["Avarua"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "rar": "Cook Islands Māori" },
     "area": 236.0,
     "flag": "🇨🇰",
     "population": 18100
@@ -789,7 +1026,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GBP": { "name": "British pound", "symbol": "£" } },
+    "capital": ["London"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "eng": "English" },
     "area": 242900.0,
     "flag": "🇬🇧",
     "population": 67215293
@@ -803,7 +1044,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ZMW": { "name": "Zambian kwacha", "symbol": "ZK" } },
+    "capital": ["Lusaka"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English" },
     "area": 752612.0,
     "flag": "🇿🇲",
     "population": 18383956
@@ -818,7 +1063,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Helsinki"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "fin": "Finnish", "swe": "Swedish" },
     "area": 338424.0,
     "flag": "🇫🇮",
     "population": 5530719
@@ -832,7 +1081,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Niamey"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 1267000.0,
     "flag": "🇳🇪",
     "population": 24206636
@@ -849,7 +1104,11 @@
       }
     },
     "independent": false,
+    "currencies": { "AUD": { "name": "Australian dollar", "symbol": "$" } },
+    "capital": ["Flying Fish Cove"],
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": { "eng": "English" },
     "area": 135.0,
     "flag": "🇨🇽",
     "population": 2072
@@ -865,7 +1124,11 @@
       }
     },
     "independent": false,
+    "currencies": { "NZD": { "name": "New Zealand dollar", "symbol": "$" } },
+    "capital": ["Fakaofo"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "smo": "Samoan", "tkl": "Tokelauan" },
     "area": 12.0,
     "flag": "🇹🇰",
     "population": 1411
@@ -886,7 +1149,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Bissau"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "por": "Portuguese", "pov": "Upper Guinea Creole" },
     "area": 36125.0,
     "flag": "🇬🇼",
     "population": 1967998
@@ -900,7 +1169,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AZN": { "name": "Azerbaijani manat", "symbol": "₼" } },
+    "capital": ["Baku"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "aze": "Azerbaijani" },
     "area": 86600.0,
     "flag": "🇦🇿",
     "population": 10110116
@@ -914,7 +1187,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Saint-Denis"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "fra": "French" },
     "area": 2511.0,
     "flag": "🇷🇪",
     "population": 840974
@@ -929,7 +1206,11 @@
       }
     },
     "independent": true,
+    "currencies": { "DJF": { "name": "Djiboutian franc", "symbol": "Fr" } },
+    "capital": ["Djibouti"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "ara": "Arabic", "fra": "French" },
     "area": 23200.0,
     "flag": "🇩🇯",
     "population": 988002
@@ -943,7 +1224,11 @@
       }
     },
     "independent": true,
+    "currencies": { "KPW": { "name": "North Korean won", "symbol": "₩" } },
+    "capital": ["Pyongyang"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "kor": "Korean" },
     "area": 120538.0,
     "flag": "🇰🇵",
     "population": 25778815
@@ -959,7 +1244,15 @@
       }
     },
     "independent": true,
+    "currencies": { "MUR": { "name": "Mauritian rupee", "symbol": "₨" } },
+    "capital": ["Port Louis"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": {
+      "eng": "English",
+      "fra": "French",
+      "mfe": "Mauritian Creole"
+    },
     "area": 2040.0,
     "flag": "🇲🇺",
     "population": 1265740
@@ -973,7 +1266,13 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Plymouth"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 102.0,
     "flag": "🇲🇸",
     "population": 4922
@@ -990,7 +1289,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Charlotte Amalie"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 347.0,
     "flag": "🇻🇮",
     "population": 106290
@@ -1004,7 +1307,11 @@
       }
     },
     "independent": true,
+    "currencies": { "COP": { "name": "Colombian peso", "symbol": "$" } },
+    "capital": ["Bogotá"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "spa": "Spanish" },
     "area": 1141748.0,
     "flag": "🇨🇴",
     "population": 50882884
@@ -1018,7 +1325,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Athens"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "ell": "Greek" },
     "area": 131990.0,
     "flag": "🇬🇷",
     "population": 10715549
@@ -1032,7 +1343,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Zagreb"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "hrv": "Croatian" },
     "area": 56594.0,
     "flag": "🇭🇷",
     "population": 4047200
@@ -1047,7 +1362,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MAD": { "name": "Moroccan dirham", "symbol": "د.م." } },
+    "capital": ["Rabat"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic", "ber": "Berber" },
     "area": 446550.0,
     "flag": "🇲🇦",
     "population": 36910558
@@ -1064,7 +1383,11 @@
       }
     },
     "independent": true,
+    "currencies": { "DZD": { "name": "Algerian dinar", "symbol": "د.ج" } },
+    "capital": ["Algiers"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic" },
     "area": 2381741.0,
     "flag": "🇩🇿",
     "population": 44700000
@@ -1076,7 +1399,11 @@
       "nativeName": {}
     },
     "independent": false,
+    "currencies": {},
+    "capital": [],
     "region": "Antarctic",
+    "subregion": "",
+    "languages": {},
     "area": 1.4e7,
     "flag": "🇦🇶",
     "population": 1000
@@ -1093,7 +1420,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Amsterdam"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "nld": "Dutch" },
     "area": 41850.0,
     "flag": "🇳🇱",
     "population": 16655799
@@ -1108,7 +1439,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SDG": { "name": "Sudanese pound", "symbol": "ج.س" } },
+    "capital": ["Khartoum"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ara": "Arabic", "eng": "English" },
     "area": 1886068.0,
     "flag": "🇸🇩",
     "population": 43849269
@@ -1124,7 +1459,11 @@
       }
     },
     "independent": true,
+    "currencies": { "FJD": { "name": "Fijian dollar", "symbol": "$" } },
+    "capital": ["Suva"],
     "region": "Oceania",
+    "subregion": "Melanesia",
+    "languages": { "eng": "English", "fij": "Fijian", "hif": "Fiji Hindi" },
     "area": 18272.0,
     "flag": "🇫🇯",
     "population": 896444
@@ -1141,7 +1480,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CHF": { "name": "Swiss franc", "symbol": "Fr" } },
+    "capital": ["Vaduz"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "deu": "German" },
     "area": 160.0,
     "flag": "🇱🇮",
     "population": 38137
@@ -1158,7 +1501,11 @@
       }
     },
     "independent": true,
+    "currencies": { "NPR": { "name": "Nepalese rupee", "symbol": "₨" } },
+    "capital": ["Kathmandu"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "nep": "Nepali" },
     "area": 147181.0,
     "flag": "🇳🇵",
     "population": 29136808
@@ -1179,7 +1526,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["San Juan"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English", "spa": "Spanish" },
     "area": 8870.0,
     "flag": "🇵🇷",
     "population": 3194034
@@ -1193,7 +1544,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GEL": { "name": "lari", "symbol": "₾" } },
+    "capital": ["Tbilisi"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "kat": "Georgian" },
     "area": 69700.0,
     "flag": "🇬🇪",
     "population": 3714000
@@ -1211,7 +1566,11 @@
       }
     },
     "independent": true,
+    "currencies": { "PKR": { "name": "Pakistani rupee", "symbol": "₨" } },
+    "capital": ["Islamabad"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "eng": "English", "urd": "Urdu" },
     "area": 881912.0,
     "flag": "🇵🇰",
     "population": 220892331
@@ -1225,7 +1584,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Monaco"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "fra": "French" },
     "area": 2.02,
     "flag": "🇲🇨",
     "population": 39244
@@ -1240,7 +1603,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BWP": { "name": "Botswana pula", "symbol": "P" } },
+    "capital": ["Gaborone"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": { "eng": "English", "tsn": "Tswana" },
     "area": 582000.0,
     "flag": "🇧🇼",
     "population": 2351625
@@ -1255,7 +1622,11 @@
       }
     },
     "independent": true,
+    "currencies": { "LBP": { "name": "Lebanese pound", "symbol": "ل.ل" } },
+    "capital": ["Beirut"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic", "fra": "French" },
     "area": 10452.0,
     "flag": "🇱🇧",
     "population": 6825442
@@ -1280,7 +1651,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "PGK": { "name": "Papua New Guinean kina", "symbol": "K" }
+    },
+    "capital": ["Port Moresby"],
     "region": "Oceania",
+    "subregion": "Melanesia",
+    "languages": { "eng": "English", "hmo": "Hiri Motu", "tpi": "Tok Pisin" },
     "area": 462840.0,
     "flag": "🇵🇬",
     "population": 8947027
@@ -1294,7 +1671,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Mamoudzou"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "fra": "French" },
     "area": 374.0,
     "flag": "🇾🇹",
     "population": 226915
@@ -1311,7 +1692,11 @@
       }
     },
     "independent": true,
+    "currencies": { "DOP": { "name": "Dominican peso", "symbol": "$" } },
+    "capital": ["Santo Domingo"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "spa": "Spanish" },
     "area": 48671.0,
     "flag": "🇩🇴",
     "population": 10847904
@@ -1332,7 +1717,11 @@
       }
     },
     "independent": false,
+    "currencies": { "AUD": { "name": "Australian dollar", "symbol": "$" } },
+    "capital": ["Kingston"],
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": { "eng": "English", "pih": "Norfuk" },
     "area": 36.0,
     "flag": "🇳🇫",
     "population": 2302
@@ -1346,7 +1735,11 @@
       }
     },
     "independent": false,
+    "currencies": {},
+    "capital": [],
     "region": "Antarctic",
+    "subregion": "",
+    "languages": { "nor": "Norwegian" },
     "area": 49.0,
     "flag": "🇧🇻",
     "population": 0
@@ -1358,7 +1751,11 @@
       "nativeName": { "ara": { "official": "دولة قطر", "common": "قطر" } }
     },
     "independent": true,
+    "currencies": { "QAR": { "name": "Qatari riyal", "symbol": "ر.ق" } },
+    "capital": ["Doha"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 11586.0,
     "flag": "🇶🇦",
     "population": 2881060
@@ -1379,7 +1776,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MGA": { "name": "Malagasy ariary", "symbol": "Ar" } },
+    "capital": ["Antananarivo"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "fra": "French", "mlg": "Malagasy" },
     "area": 587041.0,
     "flag": "🇲🇬",
     "population": 27691019
@@ -1395,7 +1796,11 @@
       }
     },
     "independent": true,
+    "currencies": { "INR": { "name": "Indian rupee", "symbol": "₹" } },
+    "capital": ["New Delhi"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "eng": "English", "hin": "Hindi", "tam": "Tamil" },
     "area": 3287590.0,
     "flag": "🇮🇳",
     "population": 1380004385
@@ -1409,7 +1814,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SYP": { "name": "Syrian pound", "symbol": "£" } },
+    "capital": ["Damascus"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 185180.0,
     "flag": "🇸🇾",
     "population": 17500657
@@ -1423,7 +1832,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Podgorica"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "cnr": "Montenegrin" },
     "area": 13812.0,
     "flag": "🇲🇪",
     "population": 621718
@@ -1438,7 +1851,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "SZL": { "name": "Swazi lilangeni", "symbol": "L" },
+      "ZAR": { "name": "South African rand", "symbol": "R" }
+    },
+    "capital": ["Mbabane"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": { "eng": "English", "ssw": "Swazi" },
     "area": 17364.0,
     "flag": "🇸🇿",
     "population": 1160164
@@ -1453,7 +1873,11 @@
       }
     },
     "independent": true,
+    "currencies": { "PYG": { "name": "Paraguayan guaraní", "symbol": "₲" } },
+    "capital": ["Asunción"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "grn": "Guaraní", "spa": "Spanish" },
     "area": 406752.0,
     "flag": "🇵🇾",
     "population": 7132530
@@ -1470,7 +1894,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["San Salvador"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 21041.0,
     "flag": "🇸🇻",
     "population": 6486201
@@ -1482,7 +1910,11 @@
       "nativeName": { "ukr": { "official": "Україна", "common": "Україна" } }
     },
     "independent": true,
+    "currencies": { "UAH": { "name": "Ukrainian hryvnia", "symbol": "₴" } },
+    "capital": ["Kyiv"],
     "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": { "ukr": "Ukrainian" },
     "area": 603500.0,
     "flag": "🇺🇦",
     "population": 44134693
@@ -1497,7 +1929,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "GBP": { "name": "British pound", "symbol": "£" },
+      "IMP": { "name": "Manx pound", "symbol": "£" }
+    },
+    "capital": ["Douglas"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "eng": "English", "glv": "Manx" },
     "area": 572.0,
     "flag": "🇮🇲",
     "population": 85032
@@ -1519,7 +1958,24 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "NAD": { "name": "Namibian dollar", "symbol": "$" },
+      "ZAR": { "name": "South African rand", "symbol": "R" }
+    },
+    "capital": ["Windhoek"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": {
+      "afr": "Afrikaans",
+      "deu": "German",
+      "eng": "English",
+      "her": "Herero",
+      "hgm": "Khoekhoe",
+      "kwn": "Kwangali",
+      "loz": "Lozi",
+      "ndo": "Ndonga",
+      "tsn": "Tswana"
+    },
     "area": 825615.0,
     "flag": "🇳🇦",
     "population": 2540916
@@ -1536,7 +1992,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "AED": { "name": "United Arab Emirates dirham", "symbol": "د.إ" }
+    },
+    "capital": ["Abu Dhabi"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 83600.0,
     "flag": "🇦🇪",
     "population": 9890400
@@ -1550,7 +2012,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BGN": { "name": "Bulgarian lev", "symbol": "лв" } },
+    "capital": ["Sofia"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "bul": "Bulgarian" },
     "area": 110879.0,
     "flag": "🇧🇬",
     "population": 6927288
@@ -1564,7 +2030,11 @@
       }
     },
     "independent": false,
+    "currencies": { "DKK": { "name": "krone", "symbol": "kr." } },
+    "capital": ["Nuuk"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "kal": "Greenlandic" },
     "area": 2166086.0,
     "flag": "🇬🇱",
     "population": 56367
@@ -1581,7 +2051,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Berlin"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "deu": "German" },
     "area": 357114.0,
     "flag": "🇩🇪",
     "population": 83240525
@@ -1595,7 +2069,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "KHR": { "name": "Cambodian riel", "symbol": "៛" },
+      "USD": { "name": "United States dollar", "symbol": "$" }
+    },
+    "capital": ["Phnom Penh"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "khm": "Khmer" },
     "area": 181035.0,
     "flag": "🇰🇭",
     "population": 16718971
@@ -1611,7 +2092,11 @@
       }
     },
     "independent": true,
+    "currencies": { "IQD": { "name": "Iraqi dinar", "symbol": "ع.د" } },
+    "capital": ["Baghdad"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic", "arc": "Aramaic", "ckb": "Sorani" },
     "area": 438317.0,
     "flag": "🇮🇶",
     "population": 40222503
@@ -1628,7 +2113,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Port-aux-Français"],
     "region": "Antarctic",
+    "subregion": "",
+    "languages": { "fra": "French" },
     "area": 7747.0,
     "flag": "🇹🇫",
     "population": 400
@@ -1642,7 +2131,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SEK": { "name": "Swedish krona", "symbol": "kr" } },
+    "capital": ["Stockholm"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "swe": "Swedish" },
     "area": 450295.0,
     "flag": "🇸🇪",
     "population": 10353442
@@ -1656,7 +2149,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "CUC": { "name": "Cuban convertible peso", "symbol": "$" },
+      "CUP": { "name": "Cuban peso", "symbol": "$" }
+    },
+    "capital": ["Havana"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "spa": "Spanish" },
     "area": 109884.0,
     "flag": "🇨🇺",
     "population": 11326616
@@ -1671,7 +2171,11 @@
       }
     },
     "independent": true,
+    "currencies": { "KGS": { "name": "Kyrgyzstani som", "symbol": "с" } },
+    "capital": ["Bishkek"],
     "region": "Asia",
+    "subregion": "Central Asia",
+    "languages": { "kir": "Kyrgyz", "rus": "Russian" },
     "area": 199951.0,
     "flag": "🇰🇬",
     "population": 6591600
@@ -1685,7 +2189,11 @@
       }
     },
     "independent": true,
+    "currencies": { "RUB": { "name": "Russian ruble", "symbol": "₽" } },
+    "capital": ["Moscow"],
     "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": { "rus": "Russian" },
     "area": 1.7098242e7,
     "flag": "🇷🇺",
     "population": 144104080
@@ -1700,7 +2208,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MYR": { "name": "Malaysian ringgit", "symbol": "RM" } },
+    "capital": ["Kuala Lumpur"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "eng": "English", "msa": "Malay" },
     "area": 330803.0,
     "flag": "🇲🇾",
     "population": 32365998
@@ -1717,7 +2229,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "STN": { "name": "São Tomé and Príncipe dobra", "symbol": "Db" }
+    },
+    "capital": ["São Tomé"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "por": "Portuguese" },
     "area": 964.0,
     "flag": "🇸🇹",
     "population": 219161
@@ -1732,7 +2250,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Nicosia"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "ell": "Greek", "tur": "Turkish" },
     "area": 9251.0,
     "flag": "🇨🇾",
     "population": 1207361
@@ -1747,7 +2269,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CAD": { "name": "Canadian dollar", "symbol": "$" } },
+    "capital": ["Ottawa"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "eng": "English", "fra": "French" },
     "area": 9984670.0,
     "flag": "🇨🇦",
     "population": 38005238
@@ -1765,7 +2291,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MWK": { "name": "Malawian kwacha", "symbol": "MK" } },
+    "capital": ["Lilongwe"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English", "nya": "Chewa" },
     "area": 118484.0,
     "flag": "🇲🇼",
     "population": 19129955
@@ -1782,7 +2312,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SAR": { "name": "Saudi riyal", "symbol": "ر.س" } },
+    "capital": ["Riyadh"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 2149690.0,
     "flag": "🇸🇦",
     "population": 34813867
@@ -1807,7 +2341,16 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "BAM": {
+        "name": "Bosnia and Herzegovina convertible mark",
+        "symbol": "KM"
+      }
+    },
+    "capital": ["Sarajevo"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "bos": "Bosnian", "hrv": "Croatian", "srp": "Serbian" },
     "area": 51209.0,
     "flag": "🇧🇦",
     "population": 3280815
@@ -1821,7 +2364,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ETB": { "name": "Ethiopian birr", "symbol": "Br" } },
+    "capital": ["Addis Ababa"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "amh": "Amharic" },
     "area": 1104300.0,
     "flag": "🇪🇹",
     "population": 114963583
@@ -1835,7 +2382,16 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Madrid"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": {
+      "spa": "Spanish",
+      "cat": "Catalan",
+      "eus": "Basque",
+      "glc": "Galician"
+    },
     "area": 505992.0,
     "flag": "🇪🇸",
     "population": 47351567
@@ -1849,7 +2405,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Ljubljana"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "slv": "Slovene" },
     "area": 20273.0,
     "flag": "🇸🇮",
     "population": 2100126
@@ -1861,7 +2421,11 @@
       "nativeName": { "ara": { "official": "سلطنة عمان", "common": "عمان" } }
     },
     "independent": true,
+    "currencies": { "OMR": { "name": "Omani rial", "symbol": "ر.ع." } },
+    "capital": ["Muscat"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 309500.0,
     "flag": "🇴🇲",
     "population": 5106622
@@ -1878,7 +2442,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Saint-Pierre"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "fra": "French" },
     "area": 242.0,
     "flag": "🇵🇲",
     "population": 6069
@@ -1896,7 +2464,11 @@
       }
     },
     "independent": false,
+    "currencies": { "MOP": { "name": "Macanese pataca", "symbol": "P" } },
+    "capital": [],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "por": "Portuguese", "zho": "Chinese" },
     "area": 30.0,
     "flag": "🇲🇴",
     "population": 649342
@@ -1913,7 +2485,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["City of San Marino"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "ita": "Italian" },
     "area": 61.0,
     "flag": "🇸🇲",
     "population": 33938
@@ -1928,7 +2504,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "LSL": { "name": "Lesotho loti", "symbol": "L" },
+      "ZAR": { "name": "South African rand", "symbol": "R" }
+    },
+    "capital": ["Maseru"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": { "eng": "English", "sot": "Sotho" },
     "area": 30355.0,
     "flag": "🇱🇸",
     "population": 2142252
@@ -1949,7 +2532,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Majuro"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "eng": "English", "mah": "Marshallese" },
     "area": 181.0,
     "flag": "🇲🇭",
     "population": 59194
@@ -1965,7 +2552,13 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "ANG": { "name": "Netherlands Antillean guilder", "symbol": "ƒ" }
+    },
+    "capital": ["Philipsburg"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English", "fra": "French", "nld": "Dutch" },
     "area": 34.0,
     "flag": "🇸🇽",
     "population": 40812
@@ -1977,7 +2570,11 @@
       "nativeName": { "isl": { "official": "Ísland", "common": "Ísland" } }
     },
     "independent": true,
+    "currencies": { "ISK": { "name": "Icelandic króna", "symbol": "kr" } },
+    "capital": ["Reykjavik"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "isl": "Icelandic" },
     "area": 103000.0,
     "flag": "🇮🇸",
     "population": 366425
@@ -1999,7 +2596,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Luxembourg"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "deu": "German", "fra": "French", "ltz": "Luxembourgish" },
     "area": 2586.0,
     "flag": "🇱🇺",
     "population": 632275
@@ -2014,7 +2615,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ARS": { "name": "Argentine peso", "symbol": "$" } },
+    "capital": ["Buenos Aires"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "grn": "Guaraní", "spa": "Spanish" },
     "area": 2780400.0,
     "flag": "🇦🇷",
     "population": 45376763
@@ -2031,7 +2636,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Cockburn Town"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 948.0,
     "flag": "🇹🇨",
     "population": 38718
@@ -2046,7 +2655,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AUD": { "name": "Australian dollar", "symbol": "$" } },
+    "capital": ["Yaren"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "eng": "English", "nau": "Nauru" },
     "area": 21.0,
     "flag": "🇳🇷",
     "population": 10834
@@ -2063,7 +2676,11 @@
       }
     },
     "independent": false,
+    "currencies": { "AUD": { "name": "Australian dollar", "symbol": "$" } },
+    "capital": ["West Island"],
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": { "eng": "English" },
     "area": 14.0,
     "flag": "🇨🇨",
     "population": 544
@@ -2088,7 +2705,15 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "DZD": { "name": "Algerian dinar", "symbol": "دج" },
+      "MAD": { "name": "Moroccan dirham", "symbol": "DH" },
+      "MRU": { "name": "Mauritanian ouguiya", "symbol": "UM" }
+    },
+    "capital": ["El Aaiún"],
     "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": { "ber": "Berber", "mey": "Hassaniya", "spa": "Spanish" },
     "area": 266000.0,
     "flag": "🇪🇭",
     "population": 510713
@@ -2102,7 +2727,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Roseau"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 751.0,
     "flag": "🇩🇲",
     "population": 71991
@@ -2116,7 +2747,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CRC": { "name": "Costa Rican colón", "symbol": "₡" } },
+    "capital": ["San José"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 51100.0,
     "flag": "🇨🇷",
     "population": 5094114
@@ -2133,7 +2768,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AUD": { "name": "Australian dollar", "symbol": "$" } },
+    "capital": ["Canberra"],
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": { "eng": "English" },
     "area": 7692024.0,
     "flag": "🇦🇺",
     "population": 25687041
@@ -2147,7 +2786,11 @@
       }
     },
     "independent": true,
+    "currencies": { "THB": { "name": "Thai baht", "symbol": "฿" } },
+    "capital": ["Bangkok"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "tha": "Thai" },
     "area": 513120.0,
     "flag": "🇹🇭",
     "population": 69799978
@@ -2162,7 +2805,11 @@
       }
     },
     "independent": true,
+    "currencies": { "HTG": { "name": "Haitian gourde", "symbol": "G" } },
+    "capital": ["Port-au-Prince"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "fra": "French", "hat": "Haitian Creole" },
     "area": 27750.0,
     "flag": "🇭🇹",
     "population": 11402533
@@ -2177,7 +2824,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "AUD": { "name": "Australian dollar", "symbol": "$" },
+      "TVD": { "name": "Tuvaluan dollar", "symbol": "$" }
+    },
+    "capital": ["Funafuti"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "tvl": "Tuvaluan" },
     "area": 26.0,
     "flag": "🇹🇻",
     "population": 11792
@@ -2191,7 +2845,11 @@
       }
     },
     "independent": true,
+    "currencies": { "HNL": { "name": "Honduran lempira", "symbol": "L" } },
+    "capital": ["Tegucigalpa"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 112492.0,
     "flag": "🇭🇳",
     "population": 9904608
@@ -2216,7 +2874,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Malabo"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "fra": "French", "por": "Portuguese", "spa": "Spanish" },
     "area": 28051.0,
     "flag": "🇬🇶",
     "population": 1402985
@@ -2230,7 +2894,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Castries"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 616.0,
     "flag": "🇱🇨",
     "population": 183629
@@ -2247,7 +2917,11 @@
       }
     },
     "independent": false,
+    "currencies": { "XPF": { "name": "CFP franc", "symbol": "₣" } },
+    "capital": ["Papeetē"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "fra": "French" },
     "area": 4167.0,
     "flag": "🇵🇫",
     "population": 280904
@@ -2262,7 +2936,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BYN": { "name": "Belarusian ruble", "symbol": "Br" } },
+    "capital": ["Minsk"],
     "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": { "bel": "Belarusian", "rus": "Russian" },
     "area": 207600.0,
     "flag": "🇧🇾",
     "population": 9398861
@@ -2276,7 +2954,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Riga"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "lav": "Latvian" },
     "area": 64559.0,
     "flag": "🇱🇻",
     "population": 1901548
@@ -2291,7 +2973,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Ngerulmud"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "eng": "English", "pau": "Palauan" },
     "area": 459.0,
     "flag": "🇵🇼",
     "population": 18092
@@ -2305,7 +2991,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Basse-Terre"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "fra": "French" },
     "area": 1628.0,
     "flag": "🇬🇵",
     "population": 400132
@@ -2326,7 +3016,11 @@
       }
     },
     "independent": true,
+    "currencies": { "PHP": { "name": "Philippine peso", "symbol": "₱" } },
+    "capital": ["Manila"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "eng": "English", "fil": "Filipino" },
     "area": 342353.0,
     "flag": "🇵🇭",
     "population": 109581085
@@ -2340,7 +3034,11 @@
       }
     },
     "independent": false,
+    "currencies": { "GIP": { "name": "Gibraltar pound", "symbol": "£" } },
+    "capital": ["Gibraltar"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "eng": "English" },
     "area": 6.0,
     "flag": "🇬🇮",
     "population": 33691
@@ -2354,7 +3052,11 @@
       }
     },
     "independent": true,
+    "currencies": { "DKK": { "name": "Danish krone", "symbol": "kr" } },
+    "capital": ["Copenhagen"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "dan": "Danish" },
     "area": 43094.0,
     "flag": "🇩🇰",
     "population": 5831404
@@ -2369,7 +3071,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Yaoundé"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "eng": "English", "fra": "French" },
     "area": 475442.0,
     "flag": "🇨🇲",
     "population": 26545864
@@ -2383,7 +3091,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GNF": { "name": "Guinean franc", "symbol": "Fr" } },
+    "capital": ["Conakry"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 245857.0,
     "flag": "🇬🇳",
     "population": 13132792
@@ -2397,7 +3109,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BHD": { "name": "Bahraini dinar", "symbol": ".د.ب" } },
+    "capital": ["Manama"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 765.0,
     "flag": "🇧🇭",
     "population": 1701583
@@ -2411,7 +3127,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SRD": { "name": "Surinamese dollar", "symbol": "$" } },
+    "capital": ["Paramaribo"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "nld": "Dutch" },
     "area": 163820.0,
     "flag": "🇸🇷",
     "population": 586634
@@ -2444,7 +3164,17 @@
       }
     },
     "independent": true,
+    "currencies": { "CDF": { "name": "Congolese franc", "symbol": "FC" } },
+    "capital": ["Kinshasa"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": {
+      "fra": "French",
+      "kon": "Kikongo",
+      "lin": "Lingala",
+      "lua": "Tshiluba",
+      "swa": "Swahili"
+    },
     "area": 2344858.0,
     "flag": "🇨🇩",
     "population": 108407721
@@ -2462,7 +3192,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SOS": { "name": "Somali shilling", "symbol": "Sh" } },
+    "capital": ["Mogadishu"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "ara": "Arabic", "som": "Somali" },
     "area": 637657.0,
     "flag": "🇸🇴",
     "population": 15893219
@@ -2477,7 +3211,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CZK": { "name": "Czech koruna", "symbol": "Kč" } },
+    "capital": ["Prague"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "ces": "Czech", "slk": "Slovak" },
     "area": 78865.0,
     "flag": "🇨🇿",
     "population": 10698896
@@ -2494,7 +3232,11 @@
       }
     },
     "independent": false,
+    "currencies": { "XPF": { "name": "CFP franc", "symbol": "₣" } },
+    "capital": ["Nouméa"],
     "region": "Oceania",
+    "subregion": "Melanesia",
+    "languages": { "fra": "French" },
     "area": 18575.0,
     "flag": "🇳🇨",
     "population": 271960
@@ -2510,7 +3252,11 @@
       }
     },
     "independent": true,
+    "currencies": { "VUV": { "name": "Vanuatu vatu", "symbol": "Vt" } },
+    "capital": ["Port Vila"],
     "region": "Oceania",
+    "subregion": "Melanesia",
+    "languages": { "bis": "Bislama", "eng": "English", "fra": "French" },
     "area": 12189.0,
     "flag": "🇻🇺",
     "population": 307150
@@ -2527,7 +3273,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "GBP": { "name": "Pound sterling", "symbol": "£" },
+      "SHP": { "name": "Saint Helena pound", "symbol": "£" }
+    },
+    "capital": ["Jamestown"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 394.0,
     "flag": "🇸🇭",
     "population": 53192
@@ -2541,7 +3294,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Lomé"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 56785.0,
     "flag": "🇹🇬",
     "population": 8278737
@@ -2558,7 +3317,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Road Town"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 151.0,
     "flag": "🇻🇬",
     "population": 30237
@@ -2573,7 +3336,11 @@
       }
     },
     "independent": true,
+    "currencies": { "KES": { "name": "Kenyan shilling", "symbol": "Sh" } },
+    "capital": ["Nairobi"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English", "swa": "Swahili" },
     "area": 580367.0,
     "flag": "🇰🇪",
     "population": 53771300
@@ -2588,7 +3355,11 @@
       }
     },
     "independent": false,
+    "currencies": { "NZD": { "name": "New Zealand dollar", "symbol": "$" } },
+    "capital": ["Alofi"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "niu": "Niuean" },
     "area": 260.0,
     "flag": "🇳🇺",
     "population": 1470
@@ -2605,7 +3376,11 @@
       }
     },
     "independent": false,
+    "currencies": {},
+    "capital": [],
     "region": "Antarctic",
+    "subregion": "",
+    "languages": { "eng": "English" },
     "area": 412.0,
     "flag": "🇭🇲",
     "population": 0
@@ -2621,7 +3396,11 @@
       }
     },
     "independent": true,
+    "currencies": { "RWF": { "name": "Rwandan franc", "symbol": "Fr" } },
+    "capital": ["Kigali"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English", "fra": "French", "kin": "Kinyarwanda" },
     "area": 26338.0,
     "flag": "🇷🇼",
     "population": 12952209
@@ -2635,7 +3414,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Tallinn"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "est": "Estonian" },
     "area": 45227.0,
     "flag": "🇪🇪",
     "population": 1331057
@@ -2647,7 +3430,11 @@
       "nativeName": { "ron": { "official": "România", "common": "România" } }
     },
     "independent": true,
+    "currencies": { "RON": { "name": "Romanian leu", "symbol": "lei" } },
+    "capital": ["Bucharest"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "ron": "Romanian" },
     "area": 238391.0,
     "flag": "🇷🇴",
     "population": 19286123
@@ -2664,7 +3451,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "TTD": { "name": "Trinidad and Tobago dollar", "symbol": "$" }
+    },
+    "capital": ["Port of Spain"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 5130.0,
     "flag": "🇹🇹",
     "population": 1399491
@@ -2681,7 +3474,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GYD": { "name": "Guyanese dollar", "symbol": "$" } },
+    "capital": ["Georgetown"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "eng": "English" },
     "area": 214969.0,
     "flag": "🇬🇾",
     "population": 786559
@@ -2702,7 +3499,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Dili"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "por": "Portuguese", "tet": "Tetum" },
     "area": 14874.0,
     "flag": "🇹🇱",
     "population": 1318442
@@ -2719,7 +3520,11 @@
       }
     },
     "independent": true,
+    "currencies": { "VND": { "name": "Vietnamese đồng", "symbol": "₫" } },
+    "capital": ["Hanoi"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "vie": "Vietnamese" },
     "area": 331212.0,
     "flag": "🇻🇳",
     "population": 97338583
@@ -2736,7 +3541,11 @@
       }
     },
     "independent": true,
+    "currencies": { "UYU": { "name": "Uruguayan peso", "symbol": "$" } },
+    "capital": ["Montevideo"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "spa": "Spanish" },
     "area": 181034.0,
     "flag": "🇺🇾",
     "population": 3473727
@@ -2754,7 +3563,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Vatican City"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "ita": "Italian", "lat": "Latin" },
     "area": 0.44,
     "flag": "🇻🇦",
     "population": 451
@@ -2772,7 +3585,11 @@
       }
     },
     "independent": false,
+    "currencies": { "HKD": { "name": "Hong Kong dollar", "symbol": "$" } },
+    "capital": ["City of Victoria"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "eng": "English", "zho": "Chinese" },
     "area": 1104.0,
     "flag": "🇭🇰",
     "population": 7500700
@@ -2786,7 +3603,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Vienna"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "de": "German" },
     "area": 83871.0,
     "flag": "🇦🇹",
     "population": 8917205
@@ -2803,7 +3624,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Saint John's"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 442.0,
     "flag": "🇦🇬",
     "population": 97928
@@ -2818,7 +3645,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TMT": { "name": "Turkmenistan manat", "symbol": "m" } },
+    "capital": ["Ashgabat"],
     "region": "Asia",
+    "subregion": "Central Asia",
+    "languages": { "rus": "Russian", "tuk": "Turkmen" },
     "area": 488100.0,
     "flag": "🇹🇲",
     "population": 6031187
@@ -2832,7 +3663,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MZN": { "name": "Mozambican metical", "symbol": "MT" } },
+    "capital": ["Maputo"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "por": "Portuguese" },
     "area": 801590.0,
     "flag": "🇲🇿",
     "population": 31255435
@@ -2846,7 +3681,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "PAB": { "name": "Panamanian balboa", "symbol": "B/." },
+      "USD": { "name": "United States dollar", "symbol": "$" }
+    },
+    "capital": ["Panama City"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 75417.0,
     "flag": "🇵🇦",
     "population": 4314768
@@ -2863,7 +3705,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Palikir"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "eng": "English" },
     "area": 702.0,
     "flag": "🇫🇲",
     "population": 115021
@@ -2878,7 +3724,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Dublin"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "eng": "English", "gle": "Irish" },
     "area": 70273.0,
     "flag": "🇮🇪",
     "population": 4994724
@@ -2894,7 +3744,13 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "ANG": { "name": "Netherlands Antillean guilder", "symbol": "ƒ" }
+    },
+    "capital": ["Willemstad"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English", "nld": "Dutch", "pap": "Papiamento" },
     "area": 444.0,
     "flag": "🇨🇼",
     "population": 155014
@@ -2908,7 +3764,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Cayenne"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "fra": "French" },
     "area": 83534.0,
     "flag": "🇬🇫",
     "population": 254541
@@ -2924,7 +3784,15 @@
       }
     },
     "independent": true,
+    "currencies": { "NOK": { "name": "Norwegian krone", "symbol": "kr" } },
+    "capital": ["Oslo"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": {
+      "nno": "Norwegian Nynorsk",
+      "nob": "Norwegian Bokmål",
+      "smi": "Sami"
+    },
     "area": 323802.0,
     "flag": "🇳🇴",
     "population": 5379475
@@ -2938,7 +3806,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Mariehamn"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "swe": "Swedish" },
     "area": 1580.0,
     "flag": "🇦🇽",
     "population": 29458
@@ -2956,7 +3828,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Bangui"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "fra": "French", "sag": "Sango" },
     "area": 622984.0,
     "flag": "🇨🇫",
     "population": 4829764
@@ -2970,7 +3848,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Ouagadougou"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 272967.0,
     "flag": "🇧🇫",
     "population": 20903278
@@ -2986,7 +3870,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ERN": { "name": "Eritrean nakfa", "symbol": "Nfk" } },
+    "capital": ["Asmara"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "ara": "Arabic", "eng": "English", "tir": "Tigrinya" },
     "area": 117600.0,
     "flag": "🇪🇷",
     "population": 5352000
@@ -3007,7 +3895,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TZS": { "name": "Tanzanian shilling", "symbol": "Sh" } },
+    "capital": ["Dodoma"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English", "swa": "Swahili" },
     "area": 945087.0,
     "flag": "🇹🇿",
     "population": 59734213
@@ -3019,7 +3911,11 @@
       "nativeName": { "kor": { "official": "대한민국", "common": "한국" } }
     },
     "independent": true,
+    "currencies": { "KRW": { "name": "South Korean won", "symbol": "₩" } },
+    "capital": ["Seoul"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "kor": "Korean" },
     "area": 100210.0,
     "flag": "🇰🇷",
     "population": 51780579
@@ -3033,7 +3929,11 @@
       }
     },
     "independent": true,
+    "currencies": { "JOD": { "name": "Jordanian dinar", "symbol": "د.ا" } },
+    "capital": ["Amman"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 89342.0,
     "flag": "🇯🇴",
     "population": 10203140
@@ -3050,7 +3950,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MRU": { "name": "Mauritanian ouguiya", "symbol": "UM" } },
+    "capital": ["Nouakchott"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "ara": "Arabic" },
     "area": 1030700.0,
     "flag": "🇲🇷",
     "population": 4649660
@@ -3064,7 +3968,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Vilnius"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "lit": "Lithuanian" },
     "area": 65300.0,
     "flag": "🇱🇹",
     "population": 2794700
@@ -3081,7 +3989,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Washington DC"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "eng": "English" },
     "area": 34.2,
     "flag": "🇺🇲",
     "population": 300
@@ -3095,7 +4007,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Bratislava"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "slk": "Slovak" },
     "area": 49037.0,
     "flag": "🇸🇰",
     "population": 5458827
@@ -3109,7 +4025,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AOA": { "name": "Angolan kwanza", "symbol": "Kz" } },
+    "capital": ["Luanda"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "por": "Portuguese" },
     "area": 1246700.0,
     "flag": "🇦🇴",
     "population": 32866268
@@ -3124,7 +4044,11 @@
       }
     },
     "independent": true,
+    "currencies": { "KZT": { "name": "Kazakhstani tenge", "symbol": "₸" } },
+    "capital": ["Nur-Sultan"],
     "region": "Asia",
+    "subregion": "Central Asia",
+    "languages": { "kaz": "Kazakh", "rus": "Russian" },
     "area": 2724900.0,
     "flag": "🇰🇿",
     "population": 18754440
@@ -3138,7 +4062,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MDL": { "name": "Moldovan leu", "symbol": "L" } },
+    "capital": ["Chișinău"],
     "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": { "ron": "Romanian" },
     "area": 33846.0,
     "flag": "🇲🇩",
     "population": 2617820
@@ -3152,7 +4080,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XOF": { "name": "West African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Bamako"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "fra": "French" },
     "area": 1240192.0,
     "flag": "🇲🇱",
     "population": 20250834
@@ -3166,7 +4100,13 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "FKP": { "name": "Falkland Islands pound", "symbol": "£" }
+    },
+    "capital": ["Stanley"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "eng": "English" },
     "area": 12173.0,
     "flag": "🇫🇰",
     "population": 2563
@@ -3180,7 +4120,11 @@
       }
     },
     "independent": true,
+    "currencies": { "AMD": { "name": "Armenian dram", "symbol": "֏" } },
+    "capital": ["Yerevan"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "hye": "Armenian" },
     "area": 29743.0,
     "flag": "🇦🇲",
     "population": 2963234
@@ -3198,7 +4142,11 @@
       }
     },
     "independent": true,
+    "currencies": { "WST": { "name": "Samoan tālā", "symbol": "T" } },
+    "capital": ["Apia"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "smo": "Samoan" },
     "area": 2842.0,
     "flag": "🇼🇸",
     "population": 198410
@@ -3214,7 +4162,14 @@
       }
     },
     "independent": false,
+    "currencies": {
+      "GBP": { "name": "British pound", "symbol": "£" },
+      "JEP": { "name": "Jersey pound", "symbol": "£" }
+    },
+    "capital": ["Saint Helier"],
     "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": { "eng": "English", "fra": "French", "nrf": "Jèrriais" },
     "area": 116.0,
     "flag": "🇯🇪",
     "population": 100800
@@ -3226,7 +4181,11 @@
       "nativeName": { "jpn": { "official": "日本", "common": "日本" } }
     },
     "independent": true,
+    "currencies": { "JPY": { "name": "Japanese yen", "symbol": "¥" } },
+    "capital": ["Tokyo"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "jpn": "Japanese" },
     "area": 377930.0,
     "flag": "🇯🇵",
     "population": 125836021
@@ -3246,7 +4205,16 @@
       }
     },
     "independent": true,
+    "currencies": { "BOB": { "name": "Bolivian boliviano", "symbol": "Bs." } },
+    "capital": ["Sucre"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": {
+      "aym": "Aymara",
+      "grn": "Guaraní",
+      "que": "Quechua",
+      "spa": "Spanish"
+    },
     "area": 1098581.0,
     "flag": "🇧🇴",
     "population": 11673029
@@ -3260,7 +4228,11 @@
       }
     },
     "independent": true,
+    "currencies": { "CLP": { "name": "Chilean peso", "symbol": "$" } },
+    "capital": ["Santiago"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "spa": "Spanish" },
     "area": 756102.0,
     "flag": "🇨🇱",
     "population": 19116209
@@ -3277,7 +4249,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Washington, D.C."],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "eng": "English" },
     "area": 9372610.0,
     "flag": "🇺🇸",
     "population": 329484123
@@ -3294,7 +4270,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["Kingstown"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 389.0,
     "flag": "🇻🇨",
     "population": 110947
@@ -3306,7 +4288,11 @@
       "nativeName": { "eng": { "official": "Bermuda", "common": "Bermuda" } }
     },
     "independent": false,
+    "currencies": { "BMD": { "name": "Bermudian dollar", "symbol": "$" } },
+    "capital": ["Hamilton"],
     "region": "Americas",
+    "subregion": "North America",
+    "languages": { "eng": "English" },
     "area": 54.0,
     "flag": "🇧🇲",
     "population": 63903
@@ -3325,7 +4311,15 @@
       }
     },
     "independent": true,
+    "currencies": { "SCR": { "name": "Seychellois rupee", "symbol": "₨" } },
+    "capital": ["Victoria"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": {
+      "crs": "Seychellois Creole",
+      "eng": "English",
+      "fra": "French"
+    },
     "area": 452.0,
     "flag": "🇸🇨",
     "population": 98462
@@ -3342,7 +4336,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Diego Garcia"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "eng": "English" },
     "area": 60.0,
     "flag": "🇮🇴",
     "population": 3000
@@ -3356,7 +4354,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GTQ": { "name": "Guatemalan quetzal", "symbol": "Q" } },
+    "capital": ["Guatemala City"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 108889.0,
     "flag": "🇬🇹",
     "population": 16858333
@@ -3370,7 +4372,11 @@
       }
     },
     "independent": true,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Quito"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "spa": "Spanish" },
     "area": 276841.0,
     "flag": "🇪🇨",
     "population": 17643060
@@ -3384,7 +4390,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Fort-de-France"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "fra": "French" },
     "area": 1128.0,
     "flag": "🇲🇶",
     "population": 378243
@@ -3402,7 +4412,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TJS": { "name": "Tajikistani somoni", "symbol": "ЅМ" } },
+    "capital": ["Dushanbe"],
     "region": "Asia",
+    "subregion": "Central Asia",
+    "languages": { "rus": "Russian", "tgk": "Tajik" },
     "area": 143100.0,
     "flag": "🇹🇯",
     "population": 9537642
@@ -3417,7 +4431,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Valletta"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "eng": "English", "mlt": "Maltese" },
     "area": 316.0,
     "flag": "🇲🇹",
     "population": 525285
@@ -3431,7 +4449,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GMD": { "name": "dalasi", "symbol": "D" } },
+    "capital": ["Banjul"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 10689.0,
     "flag": "🇬🇲",
     "population": 2416664
@@ -3448,7 +4470,11 @@
       }
     },
     "independent": true,
+    "currencies": { "NGN": { "name": "Nigerian naira", "symbol": "₦" } },
+    "capital": ["Abuja"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 923768.0,
     "flag": "🇳🇬",
     "population": 206139587
@@ -3465,7 +4491,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "BSD": { "name": "Bahamian dollar", "symbol": "$" },
+      "USD": { "name": "United States dollar", "symbol": "$" }
+    },
+    "capital": ["Nassau"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 13943.0,
     "flag": "🇧🇸",
     "population": 393248
@@ -3479,7 +4512,11 @@
         "srp": { "official": "Република Косово", "common": "Косово" }
       }
     },
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Pristina"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "sqi": "Albanian", "srp": "Serbian" },
     "area": 10908.0,
     "flag": "🇽🇰",
     "population": 1775378
@@ -3491,7 +4528,11 @@
       "nativeName": { "ara": { "official": "دولة الكويت", "common": "الكويت" } }
     },
     "independent": true,
+    "currencies": { "KWD": { "name": "Kuwaiti dinar", "symbol": "د.ك" } },
+    "capital": ["Kuwait City"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic" },
     "area": 17818.0,
     "flag": "🇰🇼",
     "population": 4270563
@@ -3508,7 +4549,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MVR": { "name": "Maldivian rufiyaa", "symbol": ".ރ" } },
+    "capital": ["Malé"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "div": "Maldivian" },
     "area": 300.0,
     "flag": "🇲🇻",
     "population": 540542
@@ -3525,7 +4570,11 @@
       }
     },
     "independent": true,
+    "currencies": { "SSP": { "name": "South Sudanese pound", "symbol": "£" } },
+    "capital": ["Juba"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "eng": "English" },
     "area": 619745.0,
     "flag": "🇸🇸",
     "population": 11193729
@@ -3539,7 +4588,11 @@
       }
     },
     "independent": true,
+    "currencies": { "IRR": { "name": "Iranian rial", "symbol": "﷼" } },
+    "capital": ["Tehran"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "fas": "Persian (Farsi)" },
     "area": 1648195.0,
     "flag": "🇮🇷",
     "population": 83992953
@@ -3553,7 +4606,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ALL": { "name": "Albanian lek", "symbol": "L" } },
+    "capital": ["Tirana"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "sqi": "Albanian" },
     "area": 28748.0,
     "flag": "🇦🇱",
     "population": 2837743
@@ -3570,7 +4627,11 @@
       }
     },
     "independent": true,
+    "currencies": { "BRL": { "name": "Brazilian real", "symbol": "R$" } },
+    "capital": ["Brasília"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "por": "Portuguese" },
     "area": 8515767.0,
     "flag": "🇧🇷",
     "population": 212559409
@@ -3584,7 +4645,11 @@
       }
     },
     "independent": true,
+    "currencies": { "RSD": { "name": "Serbian dinar", "symbol": "дин." } },
+    "capital": ["Belgrade"],
     "region": "Europe",
+    "subregion": "Southeast Europe",
+    "languages": { "srp": "Serbian" },
     "area": 88361.0,
     "flag": "🇷🇸",
     "population": 6908224
@@ -3600,7 +4665,15 @@
       }
     },
     "independent": true,
+    "currencies": { "BZD": { "name": "Belize dollar", "symbol": "$" } },
+    "capital": ["Belmopan"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": {
+      "bjz": "Belizean Creole",
+      "eng": "English",
+      "spa": "Spanish"
+    },
     "area": 22966.0,
     "flag": "🇧🇿",
     "population": 397621
@@ -3617,7 +4690,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MMK": { "name": "Burmese kyat", "symbol": "Ks" } },
+    "capital": ["Naypyidaw"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "mya": "Burmese" },
     "area": 676578.0,
     "flag": "🇲🇲",
     "population": 54409794
@@ -3631,7 +4708,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "BTN": { "name": "Bhutanese ngultrum", "symbol": "Nu." },
+      "INR": { "name": "Indian rupee", "symbol": "₹" }
+    },
+    "capital": ["Thimphu"],
     "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": { "dzo": "Dzongkha" },
     "area": 38394.0,
     "flag": "🇧🇹",
     "population": 771612
@@ -3648,7 +4732,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "VES": { "name": "Venezuelan bolívar soberano", "symbol": "Bs.S." }
+    },
+    "capital": ["Caracas"],
     "region": "Americas",
+    "subregion": "South America",
+    "languages": { "spa": "Spanish" },
     "area": 916445.0,
     "flag": "🇻🇪",
     "population": 28435943
@@ -3662,7 +4752,11 @@
       }
     },
     "independent": true,
+    "currencies": { "LRD": { "name": "Liberian dollar", "symbol": "$" } },
+    "capital": ["Monrovia"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 111369.0,
     "flag": "🇱🇷",
     "population": 5057677
@@ -3677,7 +4771,11 @@
       }
     },
     "independent": true,
+    "currencies": { "JMD": { "name": "Jamaican dollar", "symbol": "$" } },
+    "capital": ["Kingston"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English", "jam": "Jamaican Patois" },
     "area": 10991.0,
     "flag": "🇯🇲",
     "population": 2961161
@@ -3691,7 +4789,11 @@
       }
     },
     "independent": true,
+    "currencies": { "PLN": { "name": "Polish złoty", "symbol": "zł" } },
+    "capital": ["Warsaw"],
     "region": "Europe",
+    "subregion": "Central Europe",
+    "languages": { "pol": "Polish" },
     "area": 312679.0,
     "flag": "🇵🇱",
     "population": 37950802
@@ -3705,7 +4807,11 @@
       }
     },
     "independent": false,
+    "currencies": { "KYD": { "name": "Cayman Islands dollar", "symbol": "$" } },
+    "capital": ["George Town"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 264.0,
     "flag": "🇰🇾",
     "population": 65720
@@ -3722,7 +4828,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "BND": { "name": "Brunei dollar", "symbol": "$" },
+      "SGD": { "name": "Singapore dollar", "symbol": "$" }
+    },
+    "capital": ["Bandar Seri Begawan"],
     "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "languages": { "msa": "Malay" },
     "area": 5765.0,
     "flag": "🇧🇳",
     "population": 437483
@@ -3738,7 +4851,11 @@
       }
     },
     "independent": true,
+    "currencies": { "KMF": { "name": "Comorian franc", "symbol": "Fr" } },
+    "capital": ["Moroni"],
     "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": { "ara": "Arabic", "fra": "French", "zdj": "Comorian" },
     "area": 1862.0,
     "flag": "🇰🇲",
     "population": 869595
@@ -3754,7 +4871,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Hagåtña"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "cha": "Chamorro", "eng": "English", "spa": "Spanish" },
     "area": 549.0,
     "flag": "🇬🇺",
     "population": 168783
@@ -3769,7 +4890,11 @@
       }
     },
     "independent": true,
+    "currencies": { "TOP": { "name": "Tongan paʻanga", "symbol": "T$" } },
+    "capital": ["Nuku'alofa"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "ton": "Tongan" },
     "area": 747.0,
     "flag": "🇹🇴",
     "population": 105697
@@ -3787,7 +4912,14 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "AUD": { "name": "Australian dollar", "symbol": "$" },
+      "KID": { "name": "Kiribati dollar", "symbol": "$" }
+    },
+    "capital": ["South Tarawa"],
     "region": "Oceania",
+    "subregion": "Micronesia",
+    "languages": { "eng": "English", "gil": "Gilbertese" },
     "area": 811.0,
     "flag": "🇰🇮",
     "population": 119446
@@ -3801,7 +4933,11 @@
       }
     },
     "independent": true,
+    "currencies": { "GHS": { "name": "Ghanaian cedi", "symbol": "₵" } },
+    "capital": ["Accra"],
     "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": { "eng": "English" },
     "area": 238533.0,
     "flag": "🇬🇭",
     "population": 31072945
@@ -3816,7 +4952,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["N'Djamena"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "ara": "Arabic", "fra": "French" },
     "area": 1284000.0,
     "flag": "🇹🇩",
     "population": 16425859
@@ -3844,7 +4986,27 @@
       }
     },
     "independent": true,
+    "currencies": { "ZWL": { "name": "Zimbabwean dollar", "symbol": "$" } },
+    "capital": ["Harare"],
     "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": {
+      "bwg": "Chibarwe",
+      "eng": "English",
+      "kck": "Kalanga",
+      "khi": "Khoisan",
+      "ndc": "Ndau",
+      "nde": "Northern Ndebele",
+      "nya": "Chewa",
+      "sna": "Shona",
+      "sot": "Sotho",
+      "toi": "Tonga",
+      "tsn": "Tswana",
+      "tso": "Tsonga",
+      "ven": "Venda",
+      "xho": "Xhosa",
+      "zib": "Zimbabwean Sign Language"
+    },
     "area": 390757.0,
     "flag": "🇿🇼",
     "population": 14862927
@@ -3858,7 +5020,11 @@
       }
     },
     "independent": false,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Marigot"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "fra": "French" },
     "area": 53.0,
     "flag": "🇲🇫",
     "population": 38659
@@ -3872,7 +5038,11 @@
       }
     },
     "independent": true,
+    "currencies": { "MNT": { "name": "Mongolian tögrög", "symbol": "₮" } },
+    "capital": ["Ulan Bator"],
     "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": { "mon": "Mongolian" },
     "area": 1564110.0,
     "flag": "🇲🇳",
     "population": 3278292
@@ -3886,7 +5056,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Lisbon"],
     "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": { "por": "Portuguese" },
     "area": 92090.0,
     "flag": "🇵🇹",
     "population": 10305564
@@ -3901,7 +5075,11 @@
       }
     },
     "independent": false,
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "capital": ["Pago Pago"],
     "region": "Oceania",
+    "subregion": "Polynesia",
+    "languages": { "eng": "English", "smo": "Samoan" },
     "area": 199.0,
     "flag": "🇦🇸",
     "population": 55197
@@ -3926,7 +5104,13 @@
       }
     },
     "independent": true,
+    "currencies": {
+      "XAF": { "name": "Central African CFA franc", "symbol": "Fr" }
+    },
+    "capital": ["Brazzaville"],
     "region": "Africa",
+    "subregion": "Middle Africa",
+    "languages": { "fra": "French", "kon": "Kikongo", "lin": "Lingala" },
     "area": 342000.0,
     "flag": "🇨🇬",
     "population": 5657000
@@ -3942,7 +5126,11 @@
       }
     },
     "independent": true,
+    "currencies": { "EUR": { "name": "Euro", "symbol": "€" } },
+    "capital": ["Brussels"],
     "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": { "deu": "German", "fra": "French", "nld": "Dutch" },
     "area": 30528.0,
     "flag": "🇧🇪",
     "population": 11555997
@@ -3957,7 +5145,11 @@
       }
     },
     "independent": true,
+    "currencies": { "ILS": { "name": "Israeli new shekel", "symbol": "₪" } },
+    "capital": ["Jerusalem"],
     "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": { "ara": "Arabic", "heb": "Hebrew" },
     "area": 20770.0,
     "flag": "🇮🇱",
     "population": 9216900
@@ -3973,7 +5165,15 @@
       }
     },
     "independent": true,
+    "currencies": { "NZD": { "name": "New Zealand dollar", "symbol": "$" } },
+    "capital": ["Wellington"],
     "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": {
+      "eng": "English",
+      "mri": "Māori",
+      "nzs": "New Zealand Sign Language"
+    },
     "area": 270467.0,
     "flag": "🇳🇿",
     "population": 5084300
@@ -3987,7 +5187,11 @@
       }
     },
     "independent": true,
+    "currencies": { "NIO": { "name": "Nicaraguan córdoba", "symbol": "C$" } },
+    "capital": ["Managua"],
     "region": "Americas",
+    "subregion": "Central America",
+    "languages": { "spa": "Spanish" },
     "area": 130373.0,
     "flag": "🇳🇮",
     "population": 6624554
@@ -3999,7 +5203,13 @@
       "nativeName": { "eng": { "official": "Anguilla", "common": "Anguilla" } }
     },
     "independent": false,
+    "currencies": {
+      "XCD": { "name": "Eastern Caribbean dollar", "symbol": "$" }
+    },
+    "capital": ["The Valley"],
     "region": "Americas",
+    "subregion": "Caribbean",
+    "languages": { "eng": "English" },
     "area": 91.0,
     "flag": "🇦🇮",
     "population": 13452

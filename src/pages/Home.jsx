@@ -28,9 +28,9 @@ function Home() {
             </span>
           </li>
           <li>
-            <Link to="./worldRanks">World Ranks</Link>
+            <Link to="./countryTable">World Ranks</Link>
             <span className="font-small">
-              - pagination,filtering, multiple pages
+              - Pagination, filtering, multiple pages, url params
             </span>
           </li>
         </ul>

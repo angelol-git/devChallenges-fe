@@ -1,10 +1,10 @@
 import Header from "../../components/Header";
-import CountryList from "../../components/worldRanks/CountryList";
 import heroImage from "../../assets/worldRanks/hero-image-wr.jpg";
 import logoSvg from "../../assets/worldRanks/Logo.svg";
-import "./WorldRanks.css";
+import "./MainLayout.css";
 
-function WorldRanks() {
+// eslint-disable-next-line react/prop-types
+function MainLayout({ children }) {
   document.body.style = "background: #1B1D1F";
   return (
     <div className="wr__container">
@@ -17,11 +17,9 @@ function WorldRanks() {
           </div>
         </div>
       </div>
-      <main className="wr__main-container">
-        <CountryList />
-      </main>
+      <main className="wr__main-container">{children}</main>
     </div>
   );
 }
 
-export default WorldRanks;
+export default MainLayout;

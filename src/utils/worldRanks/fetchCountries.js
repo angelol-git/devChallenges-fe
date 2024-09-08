@@ -1,5 +1,5 @@
 async function fetchCountries() {
-    // const result = await fetch(`https://restcountries.com/v3.1/all?fields=name,flag,population,area,region,independent`);
+    // const result = await fetch(`https://restcountries.com/v3.1/all?fields=name,flag,population,area,region,independent,capital,subregion,languages,currencies`);
     const result = await fetch("/worldRanks/data.json");
 
     if (!result.ok) {
