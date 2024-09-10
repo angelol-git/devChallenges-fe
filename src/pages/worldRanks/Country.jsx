@@ -20,14 +20,22 @@ function Country() {
     return <div> Error fetching data</div>;
   }
 
-  function printMultiple(object) {
+  function printMultiple(object, type) {
     const arrayString = [];
-    Object.values(object).map((item) => {
-      arrayString.push(item.name);
-    });
-
-    return arrayString.join(",");
+    if (type === "currencies") {
+      Object.values(object).map((item) => {
+        arrayString.push(item.name);
+      });
+    }
+    if (type === "languages") {
+      Object.values(object).map((item) => {
+        arrayString.push(item);
+      });
+    }
+    return arrayString.join(", ");
   }
+
+  //console.log(countryResult.data);
   return (
     <MainLayout>
       <Link className="wr__country-link" to={"/countryTable"}>
@@ -45,14 +53,14 @@ function Country() {
           <div className="wr__country-info-container">
             <div>Population</div>
             <span className="wr__country-divider">|</span>
-            <div>{countryResult.data[0].population}</div>
+            <div>{countryResult.data[0].population.toLocaleString()}</div>
           </div>
           <div className="wr__country-info-container">
             <div>
               Area(km<sup>2</sup>)
             </div>
             <span className="wr__country-divider">|</span>
-            <div>{countryResult.data[0].area}</div>
+            <div>{countryResult.data[0].area.toLocaleString()}</div>
           </div>
         </div>
         <ul className="wr__country-list">
@@ -75,8 +83,8 @@ function Country() {
           <li className="wr__country-list-item">
             <div className="wr__country-list-title">Language</div>
             <div>
-              {countryResult.data[0].language
-                ? countryResult.data[0].language
+              {countryResult.data[0].languages
+                ? printMultiple(countryResult.data[0].languages, "languages")
                 : "none"}
             </div>
           </li>
@@ -84,10 +92,10 @@ function Country() {
             <div className="wr__country-list-title">Currencies</div>
             <div>
               {countryResult.data[0].currencies
-                ? printMultiple(countryResult.data[0].currencies)
+                ? printMultiple(countryResult.data[0].currencies, "currencies")
                 : "none"}
             </div>
-          </li>{" "}
+          </li>
           <li className="wr__country-list-item">
             <div className="wr__country-list-title">Continents</div>
             <div>

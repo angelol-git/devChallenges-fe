@@ -24,46 +24,25 @@ function useCountryData() {
 
   useEffect(() => {
     if (countryResult.data) {
-      //Initial Setup
-      const sortedPopData = countryResult.data.sort(
-        (a, b) => a.population - b.population
-      );
+      const filteredData = runAllFilters(countryResult.data);
 
-      const regionFilteredData = sortedPopData.filter((country) => {
-        return regionFilter[country.region] === true;
-      });
-      setTableData(regionFilteredData);
+      setTableData(filteredData);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [countryResult.data]);
+  }, [countryResult.data, sortFilter, regionFilter, statusFilter]);
 
-  useEffect(() => {
-    if (sortFilter) {
-      const sortedData = handleSort(tableData);
-      setTableData(sortedData);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sortFilter]);
-
-  useEffect(() => {
-    if (regionFilter) {
-      const regionFilteredData = handleRegionFilter(countryResult.data);
-      const sortedData = handleSort(regionFilteredData);
-      setTableData(sortedData);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [regionFilter]);
-
-  useEffect(() => {
-    const statusFilteredData = handleStatus(countryResult.data);
+  function runAllFilters(data) {
+    const regionFilteredData = handleRegionFilter(data);
+    const statusFilteredData = handleStatus(regionFilteredData);
     const sortedData = handleSort(statusFilteredData);
-    setTableData(sortedData);
-  }, [statusFilter]);
+
+    return sortedData;
+  }
 
   useEffect(() => {
-    const searchFilteredData = handleSearch(countryResult.data);
-    const sortedData = handleSort(searchFilteredData);
-    setTableData(sortedData);
+    const searchData = handleSearch(countryResult.data);
+    const filteredData = runAllFilters(searchData);
+    setTableData(filteredData);
   }, [searchBar]);
 
   function handleSort(data) {
