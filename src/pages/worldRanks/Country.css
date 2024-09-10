@@ -76,6 +76,7 @@
     color: var(--grey);
 }
 
+
 @media only screen and (max-width:640px) {
     .wr__country-top-row {
         align-items: center;
@@ -87,5 +88,10 @@
 @media only screen and (max-width:640px) {
     .wr__country-link {
         left: 20px;
+    }
+
+    .wr__country-list-multiple {
+        word-break: break-all;
+        max-width: 175px;
     }
 }

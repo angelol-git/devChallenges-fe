@@ -1,0 +1,26 @@
+.wr__country-flag-skeleton {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.wr__country-name-official-skeleton {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.wr__country-name-value-skeleton {
+    height: 20px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+.skeleton {
+    animation: shimmer 2.2s linear infinite;
+    background: linear-gradient(to right, #d5d5d5 8%, #ffffff 18%, #d8d8d8 33%);
+    background-size: 1200px 100%;
+}

@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import fetchCountry from "../../utils/worldRanks/fetchCountry.js";
 import MainLayout from "../../layouts/worldRanks/MainLayout.jsx";
+import CountrySkeleton from "./Skeletons/CountrySkeleton.jsx";
 import "./Country.css";
 function Country() {
   let params = useParams();
@@ -13,7 +14,7 @@ function Country() {
   });
 
   if (countryResult.isLoading) {
-    return <div> Loading...</div>;
+    return <CountrySkeleton />;
   }
 
   if (countryResult.isError) {
@@ -82,7 +83,7 @@ function Country() {
           </li>
           <li className="wr__country-list-item">
             <div className="wr__country-list-title">Language</div>
-            <div>
+            <div className="wr__country-list-multiple">
               {countryResult.data[0].languages
                 ? printMultiple(countryResult.data[0].languages, "languages")
                 : "none"}
@@ -90,7 +91,7 @@ function Country() {
           </li>
           <li className="wr__country-list-item">
             <div className="wr__country-list-title">Currencies</div>
-            <div>
+            <div className="wr__country-list-multiple">
               {countryResult.data[0].currencies
                 ? printMultiple(countryResult.data[0].currencies, "currencies")
                 : "none"}
