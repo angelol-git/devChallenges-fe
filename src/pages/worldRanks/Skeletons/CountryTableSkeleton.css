@@ -1,0 +1,29 @@
+.wr__table-skeleton {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+.wr__table-data-skeleton {
+    border-collapse: separate;
+}
+
+.wr__table-flag-skeleton {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.wr__table-value-skeleton {
+    height: 20px;
+    border-radius: 8px;
+}
+
+.wr__table-value-skeleton.long {
+    width: 150px;
+    border-radius: 8px;
+}
+
+.wr__table-value-skeleton.short {
+    width: 75px;
+    border-radius: 8px;
+}

@@ -4,6 +4,7 @@ import Pagination from "../../components/worldRanks/Pagination";
 import useCountryData from "../../hooks/worldRanks/useCountryData";
 import searchSvg from "../../assets/worldRanks/Search.svg";
 import MainLayout from "../../layouts/worldRanks/MainLayout";
+import CountryTableSkeleton from "./Skeletons/CountryTableSkeleton";
 import "./CountryTable.css";
 
 const PageSize = 20;
@@ -38,24 +39,14 @@ function CountryTable() {
     }
   }, [currentPage, tableData]);
 
-  if (countryResult.isError) {
-    return <div>Error</div>;
-  }
-
-  if (countryResult.isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  if (!tableData) {
-    return <p>No data available</p>;
-  }
-
   return (
     <MainLayout>
       <div className="wr__country-list-top-row">
         <div className="wr__country-length">
-          Found {tableData.length} countries
+          Found {countryResult.isSuccess ? (tableData || []).length : 0}{" "}
+          countries
         </div>
+
         <form
           onSubmit={(event) => {
             event.preventDefault;
@@ -175,62 +166,71 @@ function CountryTable() {
           </div>
         </form>
         <div className="wr__table-container">
-          <table className="wr__table">
-            <thead className="wr__table-head">
-              <tr className="wr__table-header-row">
-                <th className="wr__filter-label" scope="col">
-                  Flag
-                </th>
-                <th className="wr__filter-label" scope="col">
-                  Name
-                </th>
-                <th className="wr__filter-label" scope="col">
-                  Population
-                </th>
-                <th className="wr__filter-label" scope="col">
-                  Area (km<sup>2</sup>)
-                </th>
-                <th className="wr__filter-label" scope="col">
-                  Region
-                </th>
-              </tr>
-            </thead>
-            <tbody className="wr__table-body">
-              {paginatedTableData &&
-                paginatedTableData.map((item) => {
-                  return (
-                    <tr key={item.name.common} className="wr__table-data">
-                      <td className="wr__table-flag">{item.flag}</td>
-                      <td>
-                        <Link
-                          to={`/country/${item.name.common}`}
-                          className="wr__table-name-link"
-                        >
-                          {item.name.common.length > 25
-                            ? `${item.name.common.slice(0, 25)}...`
-                            : item.name.common}
-                        </Link>
-                      </td>
-                      <td>{item.population.toLocaleString()}</td>
-                      <td>{item.area.toLocaleString()}</td>
-                      <td>{item.region}</td>
-                    </tr>
-                  );
-                })}
-            </tbody>
-          </table>
-          {tableData && tableData.length === 0 ? (
-            <p className="wr__table-error">
-              No countries available with the filter(s) selected.
-            </p>
-          ) : null}
-
-          <Pagination
-            currentPage={currentPage}
-            totalCount={tableData.length}
-            pageSize={PageSize}
-            handlePageChange={(page) => setCurrentPage(page)}
-          />
+          {countryResult.isError ||
+            (!tableData && <div>Error displaying table data</div>)}
+          {countryResult.isLoading && <CountryTableSkeleton />}
+          {/* {countryResult.isSuccess && <CountryTableSkeleton />} */}
+          {countryResult.isSuccess && (
+            <div>
+              <table className="wr__table">
+                <thead className="wr__table-head">
+                  <tr className="wr__table-header-row">
+                    <th className="wr__filter-label" scope="col">
+                      Flag
+                    </th>
+                    <th className="wr__filter-label" scope="col">
+                      Name
+                    </th>
+                    <th className="wr__filter-label" scope="col">
+                      Population
+                    </th>
+                    <th className="wr__filter-label" scope="col">
+                      Area (km<sup>2</sup>)
+                    </th>
+                    <th className="wr__filter-label" scope="col">
+                      Region
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="wr__table-body">
+                  {paginatedTableData &&
+                    paginatedTableData.map((item) => {
+                      return (
+                        <tr key={item.name.common} className="wr__table-data">
+                          <td className="wr__table-flag">{item.flag}</td>
+                          <td>
+                            <Link
+                              to={`/country/${item.name.common}`}
+                              className="wr__table-name-link"
+                            >
+                              {item.name.common.length > 25
+                                ? `${item.name.common.slice(0, 25)}...`
+                                : item.name.common}
+                            </Link>
+                          </td>
+                          <td>{item.population.toLocaleString()}</td>
+                          <td>{item.area.toLocaleString()}</td>
+                          <td>{item.region}</td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+              {tableData && tableData.length === 0 ? (
+                <p className="wr__table-error">
+                  No countries available with the filter(s) selected.
+                </p>
+              ) : null}
+              {tableData && (
+                <Pagination
+                  currentPage={currentPage}
+                  totalCount={tableData.length}
+                  pageSize={PageSize}
+                  handlePageChange={(page) => setCurrentPage(page)}
+                />
+              )}
+            </div>
+          )}
         </div>
       </div>
     </MainLayout>
