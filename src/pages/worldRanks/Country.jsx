@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import fetchCountry from "../../utils/worldRanks/fetchCountry.js";
 import MainLayout from "../../layouts/worldRanks/MainLayout.jsx";
@@ -30,6 +30,9 @@ function Country() {
   }
   return (
     <MainLayout>
+      <Link className="wr__country-link" to={"/countryTable"}>
+        Back
+      </Link>
       <div className="wr__country-container">
         <div className="wr__country-top">
           <span className="wr__country-flag">{countryResult.data[0].flag}</span>

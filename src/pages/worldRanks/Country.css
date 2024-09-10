@@ -1,10 +1,22 @@
+.wr__country-link {
+    position: absolute;
+    left: 40px;
+    color: var(--light-grey);
+    z-index: 10;
+}
+
+.wr__country-link:visited {
+    color: var(--light-grey);
+}
+
 .wr__country-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 40px;
-    translate: 0px -70px;
     color: var(--light-grey);
+    translate: 0 -75px;
+    height: 100%;
 }
 
 .wr__country-top {
@@ -69,5 +81,11 @@
         align-items: center;
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .wr__country-link {
+        left: 20px;
     }
 }
