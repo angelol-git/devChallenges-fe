@@ -17,7 +17,9 @@ function MainLayout({ children }) {
           </div>
         </div>
       </div>
-      <main className="wr__main-container">{children}</main>
+      <main className="wr__main-wrapper">
+        <div className="wr__main-container">{children}</div>
+      </main>
     </div>
   );
 }

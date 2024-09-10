@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wr__pagination {
@@ -43,4 +44,19 @@
     font-weight: bold;
     border: 1px solid var(--grey);
     background-color: var(--grey);
+}
+
+@media only screen and (max-width:640px) {
+    .wr__pagination {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .wr__pagination-item {
+        height: 25px;
+        width: 25px;
+        border-radius: 8px;
+    }
+
 }

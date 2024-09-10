@@ -27,10 +27,7 @@ function App() {
           <Route path="/githubProfile" element={<GitHubProfile />} />
           <Route path="/countryTable" element={<CountryTable />} />
 
-          <Route
-            path="/country/:name/:official/:flag/:population/:area/:capital/:subregion/:languages/:currencies/:region"
-            element={<Country />}
-          />
+          <Route path="/country/:name" element={<Country />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
