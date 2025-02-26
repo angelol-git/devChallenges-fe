@@ -7,6 +7,7 @@ function Home() {
     <main className="main-container">
       <section className="home-container">
         <h1 className="home-header-1">devChallenges.io</h1>
+        <a href="https://www.angelol.dev">Home</a>
         <h2 className="home-header-2">Frontend Developer</h2>
         <ul className="home-list">
           <li>
